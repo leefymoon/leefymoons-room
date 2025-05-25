@@ -9,7 +9,7 @@ class asideDoodad extends HTMLElement {
                 <div class="aotw">
                     <h3>album of the week!</h3>
                     <img src="aotwIMG.png" width="150px" height="150px"/>
-                    <p>Songs About Jane<br>Maroon 5</p>
+                    <p>Clancy<br>Twenty One Pilots</p>
                 </div>
                 <div class="poll">
                     <form method="post" action="https://poll.pollcode.com/82372382"><div style="border:#8a2be2 1px solid;background-color:#000000;padding:2px;width:154px;font-family:Courier New;font-size:small;color:#fff;"><div style="padding:2px 0px 4px 2px;"><strong>salty or sweet foods?</strong></div><input type="radio" name="answer" value="1" id="answer823723821" style="float:left;" /><label for="answer823723821" style="float:left;width:125px;">salty</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer823723822" style="float:left;" /><label for="answer823723822" style="float:left;width:125px;">sweet</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px">pollcode.com <a href="https://pollcode.com/">free polls</a></div></div></form>
