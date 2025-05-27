@@ -26,7 +26,7 @@
             }
 
             .welcome p {
-                width: 80%;
+                width: 100%;
                 margin: 0;
             }
 
@@ -39,13 +39,24 @@
                 font-size: 16px;
             }
 
-            .welcome img {
+            .rating {
                 float: right;
                 position: absolute;
                 right: 0;
                 bottom: 0;
                 display: block;
                 margin: 4px;
+            }
+
+            .letmein {
+                background:transparent url("letmeINNNstatic.png") center top no-repeat;
+                width: 220px;
+                height: 124px;
+                margin: auto;
+            }
+
+            .letmein:hover {
+                background-image: url("letmeINNN.gif");
             }
         </style>
     </head>
@@ -54,11 +65,12 @@
             <div class="welcome">
                 <h1>welcome to leefymoon's room</h1>
                 <div class="line-break"></div>
-                <a href="https://www.mabsland.com/Adoption.html"><img src="webrating.gif"></a>
-                <p>hey! glad to have you here! here's a preview description of what's ahead: this site is NOT mobile friendly, contains bright colors, profanity, marquees (scrolling elements), and freely expressed opinions. if any of the topics mentioned effect you in any way, then please leave! otherwise, i welcome you to my room!</p>
+                <a href="https://www.mabsland.com/Adoption.html"><img src="webrating.gif" class="rating"></a>
+                <p>hey! glad to have you here! here's a preview description of what's ahead: this site is NOT mobile friendly, contains javascript, colors, profanity, marquees (scrolling elements), and freely expressed opinions. if any of the topics mentioned effect you in any way, then please leave! otherwise, i welcome you to my room!</p>
+                <br>
+                <a href="home.html" target="_self"><div class="letmein" title="enter!!"></div></a>
                 <br>
                 <a href="javascript: history.go(-1)" target="_self">no way jose</a>
-                <a href="home.html" target="_self">let me in!!</a>
             </div>
         </div>
         </main>
