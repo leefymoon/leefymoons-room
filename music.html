@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" id="default-style">
+        <script type="module" src="script.js"></script>
+        <link rel="icon" type="image/x-icon" href="site-favicon.ico">
+        <title>leefymoon's room</title>
+        <base target="_blank">
+    </head>
+    <body>
+        <div id="disco-mode">
+    		<img src="discoBall.gif" width="100px">
+    		<script>
+    		document.getElementById("disco-mode").style.display = "none";
+    		
+    			function discoMode() {
+  var x = document.getElementById("disco-mode");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    		</script>
+    	</div>
+        <div class="grid-container">
+            <header id="top">
+                <img src="site_header2.png" width="973px" height="148px"/>
+            </header>
+            <nav>
+                <h2>navigation</h2>
+                <div class="line-break"></div>
+                <ul>
+                    <ul>
+                    <a href="home.html" target="_self"><li>home</li></a>
+                    <a href="about.html" target="_self"><li>about</li></a>
+                    <ul type="a">
+                        <a href="kandi.html" target="_self"><li>kandi</li></a>
+                        <a href="music.html" target="_self"><li>music</li></a>
+                    </ul>
+                    <a href="blog.html" target="_self"><li>blog</li></a>
+                    <a href="graphics.html" target="_self"><li>graphics</li></a>
+                        <ul type="a">
+                            <a href="graphics.html#blinkies" target="_self"><li>blinkies</li></a>
+                            <a href="lmgraphics.html#stamps" target="_self"><li>stamps</li></a>
+                            <a href="graphics.html#buttons" target="_self"><li>buttons</li></a>
+                            <a href="graphics.html#icons" target="_self"><li>icons</li></a>
+                        </ul>
+                    <a href="resources.html" target="_self"><li>resources</li></a>
+                </ul>
+            </nav>
+            <aside>
+                <aside-doodad></aside-doodad>
+            </aside>
+            <main>
+                <div class="top-title">
+                    <h1>music</h1>
+                    <p>some treat music like a sport, but i see it as a coping mechanism. sweet sweet tunes blasting into my ears as a distraction.</p>
+                </div>
+                <div class="line-break"></div>
+                <article>
+                    <div class="title-article"><h3>why i like music</h3></div>
+                    <p>i like music because it's an escape from reality and a great way to connect with others. i love how unique music is, there's so so many genres. i also do enjoy singing, but that just barely falls under this page. music can bring people together in so many ways. i'm in a community on twitter that's dedicated to a single band! point is, music is one of the best things to exist. (fight me if you disagree)</p>
+                </article>
+                <article>
+                    <div class="title-article"><h3>music i like</h3></div>
+                    <p>i mainly like genres such as alternative, emo, and nu-metal, but there are a few exceptions depending on the artist. some of my favorite artists are twenty one pilots, fall out boy, 311, static-x, system of a down, pierce the veil, panic! at the disco (up to doab), mindless self indulgence, my chemical romance, green day, black veil brides, deveria(that my english teacher is in!!), balu brigada, and soooo much more.</p>
+                </article>
+            </main>  
+            <footer>
+                <p>power to the local dreamer. |-/</p>
+                <footer-buttons></footer-buttons>
+            </footer>
+          </div>
+          <button class="disco-button" onclick="discoMode()" title="warning for bright colors!">disco mode</button>
+    </body>
+</html>

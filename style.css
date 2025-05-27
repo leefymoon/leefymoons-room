@@ -34,6 +34,47 @@ h1, h2, h3, h4, h5, h6 {
     src: url(Martian\ Mono.ttf);
 }
 
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.welcome {
+    background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
+    border: 1px solid blueviolet;
+    text-align: center;
+    width: 55%;
+    height: fit-content;
+    position: relative;
+    padding: 10px;
+}
+
+.welcome p {
+    width: 80%;
+    margin: 0;
+}
+
+.welcome h1 {
+    margin: 2px;
+}
+
+.welcome a {
+    margin: 2px;
+    font-size: 16px;
+}
+
+.welcome img {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: 4px;
+}
+
 .grid-container {
     width: fit-content;
     margin: auto;
