@@ -19,43 +19,6 @@ class asideDoodad extends HTMLElement {
 }
 customElements.define("aside-doodad", asideDoodad);
 
-class footerButtons extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
-	<marquee>
-        <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button6.gif"></a><!-- button by s1nez.nekoweb.org -->
-        <a href="https://pikidiary.lol"><img src="pikibutton.png"/></a>
-        <a href="https://moonlit-blossom.neocities.org"><img src="moonlitblossombutton.jpeg"/></a>
-        <a href="https://kyurems-webroom.neocities.org"><img src="ksitebutton.png"/></a>
-        <a href="https://graybox.lol/" target="_blank"><img src="https://graybox.lol/button?speed=60&style=1" alt="GrayBox 88x31 Button" width="88" height="31"></a>
-        <a href="https://kaiserpug.nekoweb.org/"><img src="https://kaiserpug.neocities.org/button(4).png" alt="KaiserPug.org"></a>
-        <a href="https://lukaszone.neocities.org/"><img src="https://lukaszone.neocities.org/kkkk (online-video-cutter.com).gif" alt="Lukas Zone" title="Zone Yourselves In!"></a>
-        <a href="https://daniele63.com/"><img src="https://files.catbox.moe/5nn8i3.jpg"/></a>
-        <a href="https://openbooks.neocities.org"><img src="https://openbooks.neocities.org/img/88x31.gif" height="31" width="88" style="image-rendering:pixelated;"/></a>
-        <a href="https://miniwildpanda.neocities.org"><img src="https://files.catbox.moe/78mv2j.gif"/></a>
-        <a href="https://thegibusguy.neocities.org"><img src="https://files.catbox.moe/yua6cx.png"/></a>
-        <a href="https://t-hates-you.neocities.org/" target="_blank"><img src="https://file.garden/ZoyWx9J8Swks2aed/evilfuckingwebsite.webp"></a>
-        <a href="https://wheatley-science.neocities.org/"><img src="https://files.catbox.moe/li94r4.gif"></a>
-        <a href="https://maxboi.neocities.org"><img src="https://files.catbox.moe/t8r38w.png"/></a>
-        <a href="https://kuroi.com.br/"><img src="https://files.catbox.moe/2z8jar.png"/></a>
-        <a href="https://xxstephsroomxx.neocities.org/" target="_blank"><img src="https://i.imgur.com/rTv7TZw.png" height=31 width=88 alt="stephs room"></a>
-    	<a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
-    	<a href="https://guh.nekoweb.org/" target="_blank"><img src="https://guh.nekoweb.org/myguhsite.gif"></a>
-      <a href="https://salutationsjosh.neocities.org/"><img src="https://salutationsjosh.neocities.org/assets/button/button.gif"></a>
-    </marquee> `;
-	}
-}
-customElements.define("footer-buttons", footerButtons);
-
-class visiterCounter extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
-	<script type="text/javascript" src="https://www.counters-free.net/count/hrzs"></script><br>
-	<a href='https://www.acadoo.de/leistungen/ghostwriter-doktorarbeit/'>Diss Ghostwriter</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=d14e4fda5e2f731083992b0bba2589bfaa5adcf2'></script> `;
-	}
-}
-customElements.define("visiter-counter", visiterCounter);
-
 document.getElementById("disco-mode").style.display = "none";
 
 var x = document.getElementById("disco-mode");

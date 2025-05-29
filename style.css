@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-rows: 150px auto 1fr;
     grid-template-areas:
     'header header header header header'
+    'marquee marquee marquee marquee marquee'
     'nav main main main aside'
     'footer footer footer footer footer';
     gap: 0px;
@@ -53,6 +54,46 @@ header {
     grid-area: header; 
     border: solid 1px blueviolet;
     position: relative;
+}
+
+.marquee {
+    grid-area: marquee;
+    border: #8a2be2 1px solid;
+    height: fit-content;
+    margin-top: 5px;
+    background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+
+.marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll 10s linear infinite;
+    animation-duration: 13s;
+    margin: 0px;
+    padding: 0px;
+}
+
+.marquee-content p {
+    padding: 0px;
+    margin: 2px 0px;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
 }
 
 aside { 
@@ -104,8 +145,6 @@ aside {
 	margin: 0;
 }
 
-
-
 nav {
     grid-area: nav;
     background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
@@ -147,7 +186,6 @@ main {
     grid-area: main; 
     background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
     border: solid 1px blueviolet;
-    width: fit-content;
     height: fit-content;
     margin: 5px 0px;
     padding-bottom: 10px;
@@ -188,6 +226,25 @@ article {
     width: 95%;
     text-align: center;
     margin: 5px auto;
+}
+
+.site-buttons {
+    width: 95%;
+    height: 200px;
+    display: flex;
+    margin: auto;
+}
+
+.site-buttons article {
+    width: 50%;
+}
+
+.site-buttons article:nth-child(2) {
+    overflow-y: scroll;
+}
+
+.site-buttons .title-article {
+    width: 95%;
 }
 
 .updarticles {
