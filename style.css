@@ -78,6 +78,7 @@ header {
     min-width: 100%;
     animation: scroll 10s linear infinite;
     animation-duration: 13s;
+    width: fit-content;
     margin: 0px;
     padding: 0px;
 }
