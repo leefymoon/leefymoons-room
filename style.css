@@ -244,6 +244,11 @@ article {
     overflow-y: scroll;
 }
 
+.site-buttons article:nth-child(2) img {
+    margin: -1px -4px;
+    padding: 0;
+}
+
 .site-buttons .title-article {
     width: 95%;
 }
@@ -348,6 +353,13 @@ footer {
     object-fit: scale-down;
 }
 
+.shrine-preview {
+    margin: 10px auto;
+    width: fit-content;
+    height: 140px;
+    text-align: center;
+}
+
 #disco-mode {
   	position: fixed;
     width: 100%;
@@ -392,4 +404,61 @@ footer {
 #disco-mode img {
 	display: block;
 	margin: auto;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.welcome {
+    background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
+    border: 1px solid blueviolet;
+    text-align: center;
+    width: 55%;
+    height: fit-content;
+    position: relative;
+    padding: 10px;
+}
+
+.welcome p {
+    width: 100%;
+    margin: 0;
+}
+
+.welcome h1 {
+    margin: 2px;
+}
+
+.welcome a {
+    margin: 2px;
+    font-size: 16px;
+}
+
+.rating {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: 4px;
+}
+
+.letmein {
+    background:transparent url("letmeINNNstatic.png") center top no-repeat;
+    width: 220px;
+    height: 124px;
+    margin: auto;
+}
+
+.letmein:hover {
+    background-image: url("letmeINNN.gif");
+}
+
+.index-buttons {
+    float: inline-start;
+    margin-top: 10px;
 }
