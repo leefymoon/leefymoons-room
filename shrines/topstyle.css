@@ -1,0 +1,108 @@
+body {
+    background: url("topbackground.jpg");
+    font-family: Martian Mono;
+}
+
+@font-face {
+    font-family: Martian Mono;
+    src: url("Martian\ Mono.ttf");
+}
+
+.container {
+    margin: auto;
+    height: fit-content;
+    width: 800px;
+}
+
+header {
+    border: #FF0000 1px solid;
+    width: fit-content;
+    height: fit-content;
+    background-color: #000;
+}
+
+nav {
+    width: 100%;
+    height: fit-content;
+    border: #FF0000 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    width: 33.33%;
+    background: #000;
+    color: #fff;
+    font-family: Martian Mono;
+    border-width: 0px 1px;
+    border-color: #FF0000;
+    border-style: solid;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    background-image: linear-gradient(15deg, black 40%, red 90%);
+}
+
+main {
+    margin-top: 10px;
+    height: fit-content;
+}
+
+article {
+   display: flex;
+   align-items: center;
+   background-color: #000;
+   border: #FF0000 1px solid;
+   padding: 5px;
+   margin-top: 10px;
+}
+
+article p {
+    color: #fff;
+    width: fit-content;
+}
+
+article h1 {
+    color: #FF0000;
+    width: fit-content;
+}
+
+article img {
+    display: block;
+    border: #FF0000 1px solid;
+    margin: 10px 15px;
+}
+
+footer {
+    border: #FF0000 1px solid;
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+    color: #FF0000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.back-button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);;
+    font-size: 18px;
+    text-align: center;
+    border: #FF0000 1px solid;
+}
+
+.back-button a {
+    color: #fff;
+}
+
+.back-button a:hover {
+    font-style: italic;
+}
