@@ -220,7 +220,7 @@ main {
     text-align: center;
     color: #fff;
     width: 500px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 article {
@@ -351,6 +351,45 @@ footer {
     width: 100px;
     height: 100px;
     object-fit: scale-down;
+}
+
+@keyframes resource {
+    0% {background: rgba(0, 0, 0, 0.5); border: rgba(137, 43, 226, 0.26) 2px solid;}
+    100% {background: rgba(0, 0, 0, 0.75); border: rgba(137, 43, 226, 0.75) 2px solid;}
+}
+
+.resource-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resource {
+    width: 31%;
+    border: rgba(137, 43, 226, 0.26) 2px solid;
+    background: rgba(0, 0, 0, 0.5);
+    height: 175px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+}
+
+.resource:hover {
+    animation-name: resource;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.resource a {
+    color: #fff;
+}
+
+.resource a:hover {
+    color: #8a2be2;
 }
 
 .shrine-preview {
