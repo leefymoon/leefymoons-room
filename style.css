@@ -322,6 +322,16 @@ article {
     margin-right: 5px;    
 }
 
+.webrings {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 5px;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+}
+
 footer { 
     grid-area: footer; 
     border: solid 1px blueviolet;
