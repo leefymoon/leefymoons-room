@@ -275,8 +275,13 @@ article {
     margin-right: 5px;    
 }
 
-.new {
+.blognew {
     display: none;
+    margin-right: 5px;
+}
+
+.resrcnew {
+    display: initial;
     margin-right: 5px;
 }
 
