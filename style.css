@@ -78,9 +78,9 @@ header {
     min-width: 100%;
     animation: scroll 10s linear infinite;
     animation-duration: 13s;
-    width: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .marquee-content p {
