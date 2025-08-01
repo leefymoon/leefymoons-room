@@ -132,6 +132,10 @@ aside {
     text-align: center;
 }
 
+.recent-played-track a {
+    color: #fff;
+}
+
 .statuscafe-container {
     width: 180px;
     position: fixed;
