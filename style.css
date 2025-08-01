@@ -103,8 +103,9 @@ aside {
     margin-top: 5px;
     display: inline-flex;
     justify-content: center;
-    width: 100%;
+    width: 200px;
     height: fit-content;
+    flex-wrap: wrap;
 }
 
 .aotw {
@@ -113,7 +114,7 @@ aside {
     width: 190px;
     height: fit-content;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -122,6 +123,13 @@ aside {
     margin-right: auto;
     margin-top: 5px;
     display: block;
+}
+
+.lastfm {
+    background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
+    width: 190px;
+    border: 1px solid blueviolet;
+    text-align: center;
 }
 
 .statuscafe-container {
