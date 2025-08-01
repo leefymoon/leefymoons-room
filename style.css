@@ -124,9 +124,33 @@ aside {
     display: block;
 }
 
-.poll {
-    margin: 0;
-    margin-bottom: 5px;
+.statuscafe-container {
+    width: 180px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#statuscafe {
+    border-image: url(frame2.png);
+    border-image-slice: fill 30%;
+    border-image-width: 40px;
+    border-style: solid;
+    padding: 2px 4px 10px 4px;
+    font-size: 14px;
+    color: black;
+    width: 180px;
+    margin-left: 40px;
+}
+
+#statuscafe-username {
+    margin-bottom: .2rem;
+    margin-left: 0.22rem;
+}
+
+
+#statuscafe-content {
+    margin: 4px 4px 8px 4px;
 }
 
 .mood {
