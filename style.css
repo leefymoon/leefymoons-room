@@ -562,3 +562,9 @@ summary {
     float: inline-start;
     margin-top: 10px;
 }
+
+.kitty {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
