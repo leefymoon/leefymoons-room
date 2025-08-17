@@ -385,6 +385,11 @@ footer {
     background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
 }
 
+summary {
+    color: #fff;
+    width: fit-content;
+}
+
 #blinkies img{
     width: 150px;
     height: 20px;
