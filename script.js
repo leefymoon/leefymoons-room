@@ -9,7 +9,7 @@ class asideDoodad extends HTMLElement {
                 <div class="aotw">
                     <h3>album of the week!</h3>
                     <img src="aotwIMG.jpg" width="150px" height="150px"/>
-                    <p>Grassroots<br>311</p>
+                    <p>Elect The Dead<br>Serj Tankian</p>
                 </div>
                 `;
 	}
