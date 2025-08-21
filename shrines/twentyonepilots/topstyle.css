@@ -1,0 +1,182 @@
+body {
+    background: url("topBG.jpg") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Martian Mono;
+}
+
+@font-face {
+    font-family: Martian Mono;
+    src: url("Martian\ Mono.ttf");
+}
+
+a {
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: #000;
+    box-shadow: inset 0px 0px 10px 2px #F00;
+    border: #FF0000 1px solid;
+    border-radius: 10px;
+    color: #FFF;
+    text-align: center;
+    padding: 5px;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: none;
+}
+
+a:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.container {
+    margin: auto;
+    height: fit-content;
+    width: 800px;
+}
+
+header {
+    border: #FF0000 1px solid;
+    border-radius: 10px;
+    width: auto;
+    height: fit-content;
+    background-color: #000;
+    box-shadow: inset 0px 0px 10px 2px #F00;
+    padding: 10px;
+    display: flex;
+}
+
+header img {
+    margin: auto;
+}
+
+nav {
+    width: auto!important;
+    height: fit-content;
+    background: #000;
+    border: #FF0000 1px solid;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 7px 2px #F00;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+nav button {
+    background-color: #000;
+    color: #FFF;
+    font-family: Martian Mono;
+    border: 1px #FF0000 solid;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0px 2px;
+}
+
+nav button:hover {
+    box-shadow: inset 0px 0px 7px 2px #F00;
+}
+
+nav a {
+    margin: 5px;
+}
+
+main {
+    margin-top: 10px;
+    height: fit-content;
+}
+
+article {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #000;
+   border: #FF0000 1px solid;
+   border-radius: 10px;
+   box-shadow: inset 0px 0px 10px 2px #F00;
+   padding: 30px 10px;
+   margin-top: 10px;
+}
+
+article p {
+    color: #fff;
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+article h2 {
+    color: #FFF;
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+article h3 {
+    color: #FFF;
+}
+
+article li {
+    color: #FFF;
+}
+
+article img {
+    display: block;
+    width: 300px;
+    box-shadow: inset 0px 0px 7px 2px #F00;
+    border: #FF0000 1px solid;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.article-text {
+    border: #F00 1px solid;
+    height: fit-content;
+    width: 420px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 8px 2px #F00;
+    background: linear-gradient(#500, #000, #550000);
+}
+
+footer {
+    border: #FF0000 1px solid;
+    box-shadow: inset 0px 0px 7px 2px #F00;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+    color: #FF0000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.back-button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);;
+    font-size: 18px;
+    text-align: center;
+    border: #FF0000 1px solid;
+}
+
+.back-button a {
+    color: #fff;
+}
+
+.back-button a:hover {
+    font-style: italic;
+}
