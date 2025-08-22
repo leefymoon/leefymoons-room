@@ -312,7 +312,7 @@ article {
 }
 
 .blognew {
-    display: initial;
+    display: none;
     margin-right: 5px;
 }
 
