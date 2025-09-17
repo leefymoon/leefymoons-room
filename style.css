@@ -397,7 +397,7 @@ article {
 }
 
 .blognew {
-    display: none;
+    display: initial;
     margin-right: 5px;
 }
 
