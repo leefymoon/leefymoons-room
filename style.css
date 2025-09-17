@@ -127,9 +127,29 @@ aside {
 
 .lastfm {
     background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
-    width: 190px;
+    width: 178px!important;
     border: 1px solid blueviolet;
     text-align: center;
+    padding: 5px;
+}
+
+.lastfm .savy {
+    font-size: 10px;
+    padding: 0!important;
+    margin: 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: #8a2be2 1px solid;
+    border-bottom: none!important;
+
+}
+
+.lastfm p {
+    font-size: 15px;
+    padding: 0;
+    padding-bottom: 2px;
+    margin: 0;
+    border-bottom: #8a2be2 1px solid;
 }
 
 .recent-played-track a {
