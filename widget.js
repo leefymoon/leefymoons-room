@@ -2,7 +2,7 @@ class LastFmWidget extends HTMLElement {
 	#USERNAME = 'leefymoon';
 	#API_KEY = '1bcf6f9f2134bb32df90f70cc1dfc5cf';
 
-	#API_URL = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks';
+	#API_URL = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks';
 
 	#track_info = {};
 	shadow;
@@ -46,6 +46,7 @@ class LastFmWidget extends HTMLElement {
 				flex-direction: row;
 				align-items: center;
 				justify-content: center;
+				width: 178px!important;
 			}
 
 			.wrapper.image {
@@ -55,6 +56,7 @@ class LastFmWidget extends HTMLElement {
 
 			p {
 				margin: 0;
+				overflow-x: wrap;
 			}
 		</style>`
 
