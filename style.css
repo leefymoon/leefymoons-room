@@ -108,21 +108,31 @@ aside {
     flex-wrap: wrap;
 }
 
-.aotw {
+.socials {
     background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
     border: 1px solid blueviolet;
+    display: flex;
+    flex-wrap: wrap;
     width: 190px;
     height: fit-content;
     margin: 0 auto;
     margin-bottom: 5px;
     text-align: center;
+    justify-content: center;
 }
 
-.aotw img {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    display: block;
+.socials h2 {
+    width: 100%;
+    margin: 0;
+    background: url("site_title.png");
+    background-position: center;
+    border-bottom: #8a2be2 1px solid;
+}
+
+.socials img {
+    width: 45px;
+    margin: 5px;
+    image-rendering: pixelated;
 }
 
 .lastfm {
@@ -283,7 +293,7 @@ main {
 
 .top-title {
     width: fit-content;
-    margin: 10px;
+    margin: 10px auto;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -520,6 +530,73 @@ summary {
     width: fit-content;
     height: 140px;
     text-align: center;
+}
+
+.ws-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+
+.ws-container h2 {
+    width: 96%;
+    margin: 0;
+    padding: 5px;
+    border-bottom: #8a2be2 1px solid;
+    background: url("site_title.png");
+    background-position: center;
+}
+
+.ws-left-col {
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    margin-right: 5px;
+}
+
+.ws-right-col {
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    margin-left: 5px;
+}
+
+.ws-category{
+    border: #8a2be2 1px solid;
+    padding: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ws-item {
+    width: 100px;
+    min-height: 125px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    border: #8a2be2 1px solid;
+    margin: 10px;
+    padding: 5px 5px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    line-height: 1px;
+}
+
+.ws-item:hover {
+    width: 90%;
+    line-height: normal;
+}
+
+.ws-item p {
+    margin: auto;
+}
+
+.ws-item img {
+    margin-right: 5px;
 }
 
 #disco-mode {
