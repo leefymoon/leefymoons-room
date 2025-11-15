@@ -182,7 +182,7 @@ aside {
     font-size: 14px;
     color: black;
     width: 180px;
-    margin-left: 40px;
+    margin-left: 45px;
 }
 
 #statuscafe-username {
@@ -389,7 +389,7 @@ article {
 }
 
 .resrcnew {
-    display: none;
+    display: initial;
     margin-right: 5px;
 }
 
