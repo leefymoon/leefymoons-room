@@ -1,40 +1,129 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link href="style.css" rel="stylesheet" id="default-style">
-    <script type="module" src="script.js"></script>
-    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/oblrgb.ico">
-    <title>leefymoon's room</title>
-    <base target="_blank">
-</head>
-<body>
-    <div class="welcome-container">
-        <div class="welcome">
-            <h1>welcome to leefymoon's room</h1>
-            <div class="line-break"></div>
-            <a href="https://www.mabsland.com/Adoption.html"><img src="webrating.gif" class="rating"></a>
-            <p>hey! glad to have you here! here's a preview description of what's ahead: this site is NOT mobile
-                optimized, contains javascript, bright colors, flashing gifs, profanity, marquees (scrolling elements),
-                and freely expressed opinions. if any of the topics mentioned effect you in any way, then please leave!
-                otherwise, i welcome you to my room! <b>(things looking weird? ctrl + f5!)</b></p>
-            <br>
-            <a href="home.html" target="_self">
-                <div class="letmein" title="enter!!"></div>
-            </a>
-            <br>
-            <a href="javascript: history.go(-1)" target="_self">no way jose</a>
-            <br>
-            <div class="index-buttons">
-                <img src="https://i.ibb.co/ryKzk2V/1bw21.gif">
-                <img src="https://i.postimg.cc/kGPD6qk7/vscode.png">
-                <img src="https://i.ibb.co/dwVhSR4M/005button.gif">
-                <img src="https://i.ibb.co/5xWDV0L7/keep.gif">
-                <a href="https://crosstalk.im/"><img src="https://i.ibb.co/7NGKnXMm/crosstalk-Button.png"></a>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="site-favicon.ico">
+        <base target="_blank">
+        <script type="text/javascript">
+var speed=100; // speed colours change, 1 second = 1000
+var glow=6; // can be set from '0' for no glow, to 10
+var raincol=new Array("#C698F1","#DCC0F6","#F3E9FC","#ffffff"); // change the colours if you want to
+var alink="https://leefymoons-room.net/"; // page to link text to (set to ="" for no link)
+
+/****************************
+*    Rainbow Text Effect    *
+*(c)2003-13 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+* DON'T EDIT BELOW THIS BOX! *
+****************************/
+var rainbow, raintxt, raincnt=0;
+
+function addLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addLoadEvent(regenbogen);
+
+function regenbogen() { if (document.getElementById) {
+  var i, rainbeau;
+  rainbow=document.getElementById("rainbow");
+  raintxt=rainbow.firstChild.nodeValue;
+  while (rainbow.childNodes.length) rainbow.removeChild(rainbow.childNodes[0]);
+  for (i=0; i<raintxt.length; i++) {
+    rainbeau=document.createElement("span");
+    rainbeau.setAttribute("id", "rain"+i);
+    rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
+    if (alink) {
+      rainbeau.style.cursor="pointer";
+      rainbeau.onclick=function() { top.location.href=alink; }
+    }
+    rainbow.appendChild(rainbeau);
+  }
+  rainbow=setInterval ("raining()", speed);
+}}
+
+function raining() {
+  var i, c;
+  for (i=0; i<raintxt.length; i++) {
+    c=raincol[(i+raincnt)%raincol.length];
+    document.getElementById("rain"+i).style.color=c;
+	if (glow) document.getElementById("rain"+i).style.textShadow=c+" 0px 0px "+glow+"px";
+  }
+  raincnt++;
+}
+// ]]>
+
+        </script>
+    </head>
+    <body>
+      <div id="sticky-note">
+        <p id="sticky-note-text">css is my worst enemy</p>
+        <script>
+          var text = [
+                      "css is my worst enemy",
+	                    "WHAT H",
+	                    "what the hell is a kilometer!!!",
+	                    "yes i know my code isn't great idc",
+                      "fuck the naysayers cuz this is what style we bring!!",
+                      "i <3 my friends #myfriends",
+                      "feesh",
+                      "i really need to get a job good god",
+                      "me: i love my site!! also me: *no update for a million years..*",
+                      "now arriving at janky code central",
+                      "master of juggling school and hobbies",
+                      "arm32 linus"
+                        ]
+                        content = Math.floor(Math.random() * text.length);
+                        (document.getElementById("sticky-note-text").textContent = text[content] )
+        </script>
+      </div>
+        <div class="welc-container">
+          <h1>welcome to <b class="glow"><span id="rainbow">leefymoon's room!</span></b></h1>
+          <div class="welc-content">
+            <div class="welc-gadgets">
+              <div class="statuscafe-container">
+                <div id="statuscafe">
+                  <div id="statuscafe-username"></div>
+                    <div id="statuscafe-content"></div>
+                  </div>
+                  <img class="clippy" src="images/clippy.png" width="150px">
+                </div>
+                <script src="https://status.cafe/current-status.js?name=leefylavish" defer></script>
+                <div class="welc-button"style="margin-top: 10px;">
+                    <img src="images/desktopButton.gif">
+                    <img src="images/vscodeButton.png">
+                    <img src="images/noweb3Button.gif">
+                    <a href="https://crosstalk.im/"><img src="images/crosstalk-Button.png"></a>
+                    <a href="https://311.com/"><img src="images/311button.gif"></a>
+                    <img src="images/MShateButton.jpg">
+                    <a href="https://lttstore.com/"><img src="images/lttButton.gif"></a>
+                    <a href="https://fmhy.net/"><img src="images/piracyButton.png"></a>
+                    <a href="https://www.gimp.org"><img src="images/gimpButton.png"></a>
+                    <img src="images/edgeChromeButton.png">
+                    <img src="images/noAIButton.png">
+                    <img src="images/fishButton.png" onclick="feesh()">
+                    <audio id="feesh-clip" src="feesh.ogg"></audio>
+                    <script>
+                      var x = document.getElementById("feesh-clip");
+
+                      function feesh() {
+                        x.play()
+                      }
+                    </script>
+                </div>
+              </div>
+              <div class="welc-intro">
+                <h2>but wait!! before you go...</h2>
+                <p>first off, glad you made it! please be aware that my site contains the following: flashing images, javascript, profanity, marquees (scrolling elements), and freely expressed opinions. it should also be known that this site may not be up to accessibility standards and is not mobile friendly! (also my code is prone to being VERY jank, you have been warned...) with all of that said, i invite you into my room! (things looking strange? ctrl + shift + r or ctrl + f5!)</p>
+                <button><a href="home.html" target="_self">enter!</a></button>
+              </div>
             </div>
         </div>
-    </div>
-    <marquee class="kitty" direction="right" scrollamount="8"><img
-            src="https://i.ibb.co/mr9wpy3j/ezgif-7ae33ce282e869.gif"></marquee>
-    </main>
-</body>
+        <marquee class="kitty" direction="right" scrollamount="8"><img src="https://i.ibb.co/mr9wpy3j/ezgif-7ae33ce282e869.gif"></marquee>
+    </body>
 </html>

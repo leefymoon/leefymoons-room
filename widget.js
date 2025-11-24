@@ -87,12 +87,12 @@ class LastFmWidget extends HTMLElement {
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-		width: 178px!important;
+		min-width: 178px!important;
+    max-width: 300px!important;
 	}
 
 	wrapper.image {
-		height: 30px!important;	
-		width: 30px!important;
+		
 	}
 
 	p {

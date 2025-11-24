@@ -1,225 +1,205 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
-        <script type="module" src="script.js"></script>
-        <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/oblrgb.ico">
-        <title>leefymoon's room</title>
-        <base target="_self">
+        <link rel="icon" type="image/x-icon" href="site-favicon.ico">
+        <base target="_blank">
     </head>
     <body>
-        <div id="disco-mode">
-    		<img src="discoBall.gif" width="100px">
-    		<script>
-    		document.getElementById("disco-mode").style.display = "none";
-    		
-    			function discoMode() {
-  var x = document.getElementById("disco-mode");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-    		</script>
-    	</div>
         <div class="grid-container">
-            <header id="top">
-                <img src="site_header2.png" width="973px" height="148px"/>
+            <header>
+                <img src="banner1.png" id="banner">
+                <div id="banner-creds"></div>
+                <script>
+                    var img = [
+                        "leefy",
+	                    "bespoke",
+	                    "zookajoe",
+	                    "hunter",
+                        "epicness",
+                        "li",
+                        "ryni",
+                        "lore"
+                        ]
+                        banner = Math.floor(Math.random() * img.length);
+                        (document.getElementById("banner").src = "images/" + img[banner] + ".png")
+                        (document.getElementById("banner-creds").textContent = "made by " + img[banner])
+                </script>
             </header>
             <div class="marquee">
                 <div class="marquee-content">
-                    <p>school sux with the damn phone ban // STREAM BREACH BY TWENTY ONE PILOTS // join crosstalk today at crosstalk.im //</p>
+                    <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at crosstalk.im //</p>
                 </div>
                 <div class="marquee-content">
-                    <p>school sux with the damn phone ban // STREAM BREACH BY TWENTY ONE PILOTS // join crosstalk today at crosstalk.im //</p>
+                    <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at crosstalk.im //</p>
                 </div>
             </div>
-            <nav id="nav">
-                <h2>navigation</h2>
-                <div class="line-break"></div>
-                <ul>
-                <a href="home.html" target="_self">
-                    <li>home</li>
-                </a>
-                <div class="subnav-container">
-                    <a href="about.html" target="_self">
-                        <li class="subnav-li">about</li>
-                    </a>
-                    <div class="subnav">
-                        <a href="kandi.html" target="_self">
-                            <li>kandi</li>
-                        </a>
-                        <a href="music.html" target="_self">
-                            <li>music</li>
-                        </a>
-                    </div>
-                </div>
-                <a href="blog.html" target="_self">
-                    <li><img class="blognew" src="new.gif">blog</li>
-                </a>
-                <div class="subnav-container">
-                    <a href="graphics.html" target="_self">
-                        <li class="subnav-li">graphics</li>
-                    </a>
-                    <div class="subnav">
-                        <a href="graphics.html#blinkies" target="_self">
-                            <li>blinkies</li>
-                        </a>
-                        <a href="graphics.html#stamps" target="_self">
-                            <li>stamps</li>
-                        </a>
-                        <a href="graphics.html#buttons" target="_self">
-                            <li>buttons</li>
-                        </a>
-                        <a href="graphics.html#icons" target="_self">
-                            <li>icons</li>
-                        </a>
-                    </div>
-                </div>
-                <a href="resources.html" target="_self">
-                    <li><img class="resrcnew" src="new.gif">resources</li>
-                </a>
-                <a href="shrines.html" target="_self">
-                    <li>shrines</li>
-                </a>
-                <a href="whatsshaking.html" target="_self">
-                    <li>what's shaking</li>
-                </a>
-            </ul>
+            <nav>
+                <button><a href="home.html" target="_self">home</a></button>
+                <button><a href="about.html" target="_self">about</a></button>
+                <button><a href="blog.html" target="_self">blog</a></button>
+                <button><a href="graphics.html" target="_self">graphics</a></button>
+                <button><a href="resources.html" target="_self">resources</a></button>
+                <button><a href="shrines.html" target="_self">shrines</a></button>
             </nav>
-            <aside>
-                <aside-doodad></aside-doodad>
-                <div class="lastfm">
-                    <p><a href="https://last.fm/user/leefymoon/">leefymoon</a> last listened to:</p>
-                    <last-fm-widget auto-update polling-rate="10"></last-fm-widget>
-		            <script type="module" src="widget.js"></script>
-                    <p class="savy">made by <a href="https://github.com/Savy011/lastfm-widget">savy</a></p>
-                </div>
-            </aside>
             <main>
-                <div class="top-title">
-                    <h1>blog</h1>
-                    <p>here lies random crap about my days on earth and other stuffs. major yap alert..</p>
-                </div>
-                <div class="line-break"></div>
                 <div class="blog-container">
-                    <h3>#019//9.16.25</h3>
+                    <div class="blog-container">
+                    <h1>#019//9.16.25</h1>
                     <p>new twenty one pilots album and new skate game!!</p>
-                    <a href="lmblog/blog019.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey!! like i predicted, it's been a bit! (but then again i say that every blog :p) so i started 10th grade, not too bad? but i lack any friends at least 3 of my classes so that kinda sucks... but the new twenty one pilots album is out! i really love it, it's an on brand sound but also so different at the same time. i went to the listening party for it too! (and destroyed my knees from standing :']) i got a boxset for the album aaaand a first pressing edition cd so i'm super lucky ^^ today the new skate game comes out!! it's definitely not what anyone playing skate 3 back then would've expected, but i think it still has potential! i'm super excited for it to come out, literally gonna be the first thing i do after i do my hw hehehehe. well that's it for today, i'll post again soon... (maybe)</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#018//8.17.25</h3>
+                    <h1>#018//8.17.25</h1>
                     <p>yapping about my presence on the internet and my enjoyment of it.</p>
-                    <a href="lmblog/blog018.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey guys!! lately i've been on the web a lot, aned enjoying it ^^ i feel like the internet can be the best if you're in the right spaces. i've cut tiktok and instagram out of my life and it's been great! idk modern mainstream culture just doesn't interest me. i've been on tumblr and spacehey, i gotta say it's way better. i feel like i'm actually connecting with a community that i resonate with!! i also started making graphics and i enjoy it! it's an art medium (if u can call it that) that allows my full creativity, and i love it. feel free to request some graphics on tumblr @leefymoon ^^ i also went thrifting the other day with my mom and got two $80 monitors for $25 each!! they're fairly modern, acer kc2 released in 2023, 1080p, 100hz refresh rate. they lookn amazing, especially for only being 1080p! overall i've just really been enjoying being on the internet, despite all the negatives about it. i'm sure there's a possibility that i'm only enjoying it more because school is starting soon, but even then i'm still happy. that's all for now, probs next blog post will be back to school. bye!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#017//7.8.25</h3>
+                    <h1>#017//7.8.25</h1>
                     <p>summer shenanigans, weird people being weird in vrchat, trying to stay active during the summer..</p>
-                    <a href="lmblog/blog017.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hello gang. ok no. idk what to call yall but alr. so summer has begun (clearly) and its a hot one!! most days its at least 85, so i stay inside.. my friend slept over last week so that was fire, we mainly watched a lot of youtube lol no complaints tho!! i've been playing a lot of vrchat lately, and BOY what chaos that is. slurs being thrown around left and right, people asking you invasive questions, a whole ton of fun. but once you find your people, things are fun as hell! my favorite thing rn is flying jets n shit, coolest thing ever. i've also been trying to go on walks more! as much as i want to go to the gym, my dad almost always either has shit to do or in in too much pain to go. so i usually don't ask anymore unless he offers. but i totally get it, it's not easy to cram more things into an already crammed schedule. well that's where i'll leave off today, maaaaybe you'll see another blog before the school year starts, idk.. cya soon?</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#016//6.10.25</h3>
+                    <h1>#016//6.10.25</h1>
                     <p>stressed out cramming for state exams and finals, new computer for the computerless, and cryptic music releases.</p>
-                    <a href="lmblog/blog016.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hellooo.. this blog is a tad bittersweet because the realization that my freshman year is almost over is finally kicking in. while it's something that i never want to end, i know i must grow as a person. if any of my teachers happen to be reading this, thank you for making my first year of high school great. (expect visits!!) well with that out of the way, let me talk about other things. i have my science state exams today, on top of that i am writing this at 5am because i couldn't sleep any longer! hopefully it's not as confusing to me as the midterm was, but we'll see! i have my algebra exam in a week on the 18th, sooo excited.. at least with algebra though i know what i'm doing for the most past lol. in other news, i got my dad's pc! i also got his monitor, and don't worry i didn't rob him out of a computer and monitor, he got new ones.. so now i can play games and code and all of the fun things! and lastly, twenty one pilots is releasing a new song thursday, AND their new album is coming out in september!! :proud: i highly encourage you to listen to it, even if you're not huge on their music. it's pretty much a different genre each album, so maybe you'll like it! well this turned out to be a bit longer, i'll see you all again soon!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#015//5.27.25</h3>
+                    <h1>#015//5.27.25</h1>
                     <p>end of the school year panic and electronics dropping like flies.</p>
-                    <a href="lmblog/blog015.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hi everyone, hope you're doing splendid, cuz i'm not. *loud screaming intensifies* so regents and finals are coming up, i am t-e-r-r-i-f-i-e-d!! (reference) i really have no interest in studying so idk. i know i just have to get my ass in gear and study but it's so hard to do that most days. and on top of end of the year stress, as if it couldn't get any worse, my xbox stopped working!! it quite literally won't even load the screen for me to login. how fun. /s and i opened my xbox 360 to maybe fix its overheating issue, but it still fucking overheats!! literally stayed up until 3 in the ams with my dad just for it to NOT WORK!! ugh. thanks for listening to my rant, i gotta get going before my dad goes to the gym without me, byeeee...</p>
+                    </details>
                 </div>
                  <div class="blog-container">
-                    <h3>#014//5.15.25</h3>
+                    <h1>#014//5.15.25</h1>
                     <p>good times ruined, bad timing all across the board.</p>
-                    <a href="lmblog/blog014.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>ok. so everything WAS going great, i started helping with the morning announcements, i got gold honor roll on my latest report card, so on and so forth. then BOOM, i have a head cold, i have media arts awards to go to tonight, AND i can't even stay home because of state labs in biology!! so here i am, popping dayquil in the middle of math, trying not to get other people sick. i definetely feel much better than how i was feeling yesterday though, yesterday was probs the worst i've felt with a head cold. hopefully i feel ok enough to make it to the media arts awards tonight, i want to have another great memory from hs.. anywayyy i'll hopefully blog again soon, probably when i feel better, cya soon</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#013//4.21.25</h3>
+                    <h1>#013//4.21.25</h1>
                     <p>returning from break, old pcs being weird, and father being a magic man...</p>
-                    <a href="lmblog/blog013.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey! welcome back :] it's my first day back from (a certainly needed) break and i'm doing alright. i've started using my win xp pc again! mostly for AIM (sn: leefymoon) n shit, although i play a bit of pinball. there was a small scare when my pc wasn't coming out of standby, but my dad fixed it with his magical fingers as always. i'm hoping to FINALLY implement the weekly kandi thing, so be on the look out! love u all!! byeeeee :3</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#012//4.7.25</h3>
+                    <h1>#012//4.7.25</h1>
                     <p>read about my burn out as a straight a student, or don't, it's pretty depressing anyway.</p>
-                    <a href="lmblog/blog012.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey guys, how are you all? i'm not that great :/ i'm getting burnt out from school again. it's like a never ending cycle, i get a break from school then when i get back i'm bombarded with work. as much as i like learning and seeing my friends, it's so tiring doing all the work, especially when you're a good student and everyone expects good grades out of you and you don't want to let them down. i do all this work and sometimes it feels lime there's no true reward. luckily spring break starts this weekend. love you all.</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#011//3.26.25</h3>
+                    <h1>#011//3.26.25</h1>
                     <p>surviving the horrible virus COVID.. (and also missing a math test x_x)</p>
-                    <a href="lmblog/blog011.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey i'm not dead!! covid was ROUGH, fever, chills, sore throat, simply awful. i'm still gaining my smell back! i can't smell much, unless it's right up to my nose LMAO well besides that, i don't have a whole ton of work to make up yay!! but i did miss a math test so i gotta make that up before spring break... last night i got pretty good sleep, so let's hope for the best today!! bye bye!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#010//3.16.25</h3>
+                    <h1>#010//3.16.25</h1>
                     <p>catching COVID disgused as allergies and wacky meds that made me hate everything and anything!</p>
-                    <a href="lmblog/blog010.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey all. first things first, i have covid and i am ILL. i thought my allergies were acting up, but nope! yesterday was day 1 and today i'm not feeling as bad, but i know it'll be worse tomorrow. before i got covid, i was having crazy mood swings from meds my doctor put me on so that was fun. let's just hope i don't have too much work to do this week.. well i gotta relax, see yall soon.</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#009//3.11.25</h3>
+                    <h1>#009//3.11.25</h1>
                     <p>311 day was a waaaarm day!! also very short blog..</p>
-                    <a href="lmblog/blog009.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey what's up? it's 311 day!! i'm gonna celebrate by trying to get a 311 cd >:] today is the warmest day in a while with a high of 70 (farenheit)!! i'm wearing shorts and a tshirt lol :p i have a project to do, so not much of an update today.. cya!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#008//3.6.25</h3>
+                    <h1>#008//3.6.25</h1>
                     <p>boring yap involving shit about school, not worth reading tbh</p>
-                    <a href="lmblog/blog008.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey! it's been a bit, let me update you on things! i got a 100 on my ancient rome quiz last week so that's a plus! i also got a 94 on my english midterm! the writing response was an 11th grade level passage! more good news is that i'm helping my middle school art teacher with his art club! luckily the hs art club and his art club are on different days, so i don't have to worry about that. it's finally starting to get warmer here, so i guess we'll see what spring brings! see you soon!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#007//4.21.25</h3>
+                    <h1>#007//4.21.25</h1>
                     <p>new tech i got (and struggled with) and visiting old teachers</p>
-                    <a href="lmblog/blog007.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey! how is everything? so i've been working on a Windows XP PC and that's been a whole thing... i also got a new cd player! it's a whole component system and i have a ton of speakers @_@ but today i visited my middle school teachers! they were all thrilled to see me, especially my math teacher :] also friday is my birthday!! i'll be 15 :(( well that's all from me, bye!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#006//12.4.24</h3>
+                    <h1>#006//12.4.24</h1>
                     <p>pre-xmas break stress, the discovery of my web designer teacher, and learning JS</p>
-                    <a href="lmblog/blog006.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>happy december!! i can't wait for break... well i had an awful stomach bug over thanksgiving but besides that not much has happened. today i discovered my math teacher (who i probably shared my site to.. hey mr.m!) is into web design! he even showed me some of his js code on his site which is pretty sick! i'm probably going to (try to) continue learning js, we'll see though... that's all i have to share, if i don't post again before the holidays, happy holidays!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#005//11.17.24</h3>
+                    <h1>#005//11.17.24</h1>
                     <p>welcome to the holiday season (?), school shit, and an actual teacher for biology!!</p>
-                    <a href="lmblog/blog005.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey! happy holiday season!! (at least to me :p) hope all is well, everything has been pretty good here. the first quarter just ended and i have all 90s B) computer science is going pretty well, we're on the 5th lab! we're also finally getting a teacher for biology since ours is on maternity leave. the only thing is that's she's in a different state so we'll be doing virtual classes :( well that's all for now, cya!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#004//10.7.24</h3>
+                    <h1>#004//10.7.24</h1>
                     <p>happy halloween season!! a very short blog, basically just what i'm going as..</p>
-                    <a href="lmblog/blog004.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey!! i know i'm a bit late, but happy spooky month! i'm dressing up as finn from adventure time (again) for halloween!! today was exhausting as usual, but i at least did decent on my math test. well i don't have much else to say, so bye!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#003//9.26.24</h3>
+                    <h1>#003//9.26.24</h1>
                     <p>school recap, and about a new small social media :p</p>
-                    <a href="lmblog/blog003.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey hey, come on in! today was certainly something. i had a headache and a ton of caffeine. i had a lot of homework to do aswell. aand i had gym.. but i got the graphics page done (which u should check out) so that's good. there's a site called pikidiary that i'd love if y'all checked it out!! it's a micro-blogging site, with a very cool community! well that's all for now, cya!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#002//9.23.24</h3>
+                    <h1>#002//9.23.24</h1>
                     <p>new color scheme! brief school talk and seeing twenty one pilots!</p>
-                    <a href="lmblog/blog002.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>welcome back! it's been a bit but don't worry, i didn't forget! hopefully the purple is enjoyable, but feel free to let me know! school is fine, computer science is all good for now. i will update on my journey in computer science as it goes on! i also saw twenty one pilots in boston on friday! (9.20.24) that show was really good, and i was really close to b-stage!! i got a shirt, hoodie, AND flag! i gave out my bracelets and got some as well. i will see you all in the next post, bye!!</p>
+                    </details>
                 </div>
                 <div class="blog-container">
-                    <h3>#001//9.8.24</h3>
+                    <h1>#001//9.8.24</h1>
                     <p>the first blog! expectations for my blogs and a short day recap.</p>
-                    <a href="lmblog/blog001.html">see more>></a>
+                    <details>
+                        <summary>see more</summary>
+                        <p>hey! so here is where i'll have life updates and whatnot. today wasn't very eventful, but last week i started hs! all my classes are at least decent, besides history.. i take art and computer science, along with the required 2nd year of french. which also means i have no study hall. :[ well anyway, i really have to get to sleep soon so cya!</p>
+                    </details>
                 </div>
-            </main>  
+            </main>
             <footer>
-                <p>power to the local dreamer. |-/</p>
-                <div class="webrings">
-                    <map name="noaimini7">
-                        <area href="https://baccyflap.com/noai" shape="rect" coords="15,3,72,27" target="_blank" alt="no ai webring" title="no ai webring">
-                        <area href="https://baccyflap.com/noai/?prv&s=lrm" target="_top" shape="rect" coords="3,6,12,27" alt="previous" title="previous">
-                        <area href="https://baccyflap.com/noai/?nxt&s=lrm" target="_top" shape="rect" coords="75,6,84,27" alt="next" title="next">
-                    </map>
-                    <img usemap="#noaimini7" src="https://baccyflap.com/noai/miniwidget7.gif" alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down">
-                </div>
+                <p>site made by yours truly :]</p>
             </footer>
-          </div>
-          <button class="disco-button" onclick="discoMode()" title="warning for bright colors!">disco mode</button>
-        <div class="statuscafe-container">
-            <div id="statuscafe">
-                <div id="statuscafe-username"></div>
-                <div id="statuscafe-content"></div>
-            </div>
-            <img class="clippy" src="clippy.png" width="150px">
         </div>
-        <script src="https://status.cafe/current-status.js?name=leefylavish" defer></script>
     </body>
 </html>

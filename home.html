@@ -1,414 +1,560 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link href="style.css" rel="stylesheet" id="default-style">
-    <script type="module" src="script.js"></script>
-    <script type="module" src="lastfm.js"></script>
-    <link rel="icon" type="image/x-icon" href="site-favicon.ico">
-    <title>leefymoon's room</title>
-    <base target="_blank">
-</head>
-<body>
-    <div id="disco-mode">
-        <img src="discoBall.gif" width="100px">
-        <script>
-            document.getElementById("disco-mode").style.display = "none";
-
-            function discoMode() {
-                var x = document.getElementById("disco-mode");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        </script>
-    </div>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="site-favicon.ico" />
+    <base target="_blank" />
+  </head>
+  <body>
     <div class="grid-container">
-        <header id="top">
-            <img src="site_header2.png" width="973px" height="148px" />
-        </header>
-        <div class="marquee">
-            <div class="marquee-content">
-                <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at
-                    crosstalk.im //</p>
-            </div>
-            <div class="marquee-content">
-                <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at
-                    crosstalk.im //</p>
-            </div>
+      <header>
+        <img src="banner1.png" id="banner" />
+        <div id="banner-creds"></div>
+        <script>
+          var img = [
+            "leefy",
+            "bespoke",
+            "zookajoe",
+            "hunter",
+            "epicness",
+            "li",
+            "ryni",
+            "lore",
+          ];
+          banner = Math.floor(Math.random() * img.length);
+          (document.getElementById("banner").src =
+            "images/" + img[banner] + ".png")(
+            (document.getElementById("banner-creds").textContent =
+              "made by " + img[banner])
+          );
+        </script>
+      </header>
+      <div class="marquee">
+        <div class="marquee-content">
+          <p>
+            christmas time is hereeeeee // i need to grind ow2 BADLY // join
+            crosstalk today at crosstalk.im //
+          </p>
         </div>
-        <nav id="nav">
-            <h2>navigation</h2>
-            <div class="line-break"></div>
-            <ul>
-                <a href="home.html" target="_self">
-                    <li>home</li>
-                </a>
-                <div class="subnav-container">
-                    <a href="about.html" target="_self">
-                        <li class="subnav-li">about</li>
-                    </a>
-                    <div class="subnav">
-                        <a href="kandi.html" target="_self">
-                            <li>kandi</li>
-                        </a>
-                        <a href="music.html" target="_self">
-                            <li>music</li>
-                        </a>
-                    </div>
-                </div>
-                <a href="blog.html" target="_self">
-                    <li><img class="blognew" src="new.gif">blog</li>
-                </a>
-                <div class="subnav-container">
-                    <a href="graphics.html" target="_self">
-                        <li class="subnav-li">graphics</li>
-                    </a>
-                    <div class="subnav">
-                        <a href="graphics.html#blinkies" target="_self">
-                            <li>blinkies</li>
-                        </a>
-                        <a href="graphics.html#stamps" target="_self">
-                            <li>stamps</li>
-                        </a>
-                        <a href="graphics.html#buttons" target="_self">
-                            <li>buttons</li>
-                        </a>
-                        <a href="graphics.html#icons" target="_self">
-                            <li>icons</li>
-                        </a>
-                    </div>
-                </div>
-                <a href="resources.html" target="_self">
-                    <li><img class="resrcnew" src="new.gif">resources</li>
-                </a>
-                <a href="shrines.html" target="_self">
-                    <li>shrines</li>
-                </a>
-                <a href="whatsshaking.html" target="_self">
-                    <li>what's shaking</li>
-                </a>
-            </ul>
-        </nav>
-        <aside>
-            <aside-doodad></aside-doodad>
-            <div class="lastfm">
-                <p><a href="https://last.fm/user/leefymoon/">leefymoon</a> last listened to:</p>
+        <div class="marquee-content">
+          <p>
+            christmas time is hereeeeee // i need to grind ow2 BADLY // join
+            crosstalk today at crosstalk.im //
+          </p>
+        </div>
+      </div>
+      <nav>
+        <button><a href="home.html" target="_self">home</a></button>
+        <button><a href="about.html" target="_self">about</a></button>
+        <button><a href="blog.html" target="_self">blog</a></button>
+        <button><a href="graphics.html" target="_self">graphics</a></button>
+        <button><a href="resources.html" target="_self">resources</a></button>
+        <button><a href="shrines.html" target="_self">shrines</a></button>
+      </nav>
+      <main>
+        <article>
+          <h1>welcome!</h1>
+          <p>
+            hey! glad to have you here! welcome to my room! here is simply a
+            site to practice and improve my coding skills. this site is sadly
+            not mobile friendly, but i higly encourage you to view in desktop
+            mode! well, i won't keep you any longer, go check everything out! i
+            hope you enjoy your stay :]
+          </p>
+        </article>
+        <article>
+          <h1>sign the guestbook?</h1>
+          <p>
+            you know you want to... but in all honesty please do sign it! you'll
+            get to leave your mark on a random piece of the internet :]
+          </p>
+          <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-36245-c9"
+            ><img
+              src="images/guestbookButton.png"
+              style="border: 1px #8a2be2 solid"
+          /></a>
+        </article>
+        <article>
+          <h1>what's in the new</h1>
+          <div class="new-article-container">
+            <div class="new-article">
+              <div class="lastfm">
+                <p>
+                  <a href="https://last.fm/user/leefymoon/">leefymoon</a> last
+                  listened to:
+                </p>
                 <last-fm-widget auto-update polling-rate="10"></last-fm-widget>
                 <script type="module" src="widget.js"></script>
-                <p class="savy">made by <a href="https://github.com/Savy011/lastfm-widget">savy</a></p>
-            </div>
-        </aside>
-        <main>
-            <div class="top-title">
-                <h1>home</h1>
-                <p>the entryway of all sites, the introduction to a new section of the internet, whatever you want to
-                    call it.</p>
-            </div>
-            <div class="line-break"></div>
-            <article>
-                <div class="title-article">
-                    <h3>welcome</h3>
-                </div>
-                <p>come on in! welcome to my room! here is simply a site to practice and improve my coding skills. this
-                    site is sadly not mobile friendly, but i higly encourage you to view in desktop mode! well, i won't
-                    keep you any longer, go check everything out! i hope you enjoy your stay :]</p>
-            </article>
-            <article>
-                <div class="title-article">
-                    <h3>sign my guestbook?</h3>
-                </div>
-                <p>ooo u wanna sign my guestbook sooo bad >:] (but actually go sign it, i'd love to know you were here!)
+                <p class="savy">
+                  made by
+                  <a href="https://github.com/Savy011/lastfm-widget">savy</a>
                 </p>
-                <a href="http://users3.smartgb.com/g/g.php?a=s&amp;i=g36-36245-c9" target="_blank">
-                    <img class="gb" alt="guestbook-button" border="0" src="guestbookButton.png" width="120" height="60">
-                </a>
-            </article>
-            <article>
-                <div class="title-article">
-                    <h3>care for an update?</h3>
-                </div>
-                <div class="updarticles">
-                    <article>
-                        <h3>11.8.25</h3>
-                        <p>removed the shows section from what's shaking and added youtubers! i watch youtube more than shows, what do you want from me...</p>
-                    </article>
-                    <article>
-                        <h3>10.20.25</h3>
-                        <p>added a what's shaking page! see what's in the now with my interests ^^ also removed the album of the week and added my socials!</p>
-                    </article>
-                    <article>
-                        <h3>9.17.25</h3>
-                        <p>changed the last.fm widget! widget was made by my sweet friend <a
-                                href="https://github.com/Savy011/lastfm-widget">savy</a> :]</p>
-                    </article>
-                    <article>
-                        <h3>9.16.25</h3>
-                        <p>added a subnav for about and graphics!</p>
-                    </article>
-                    <article>
-                        <h3>9.15.25</h3>
-                        <p>changed the title image for articles, changed the height of the two site button sections, and
-                            changed the navigation styling ^^</p>
-                    </article>
-                    <article>
-                        <h3>8.20.25</h3>
-                        <p>revamped my twenty one pilots shrine and added a discography page to it!</p>
-                    </article>
-                    <article>
-                        <h3>8.17.25</h3>
-                        <p>started to make graphics, so i added a section for my graphics on the graphics page! and i
-                            also added a little kitty on the landing page ^^</p>
-                    </article>
-                    <article>
-                        <h3>7.31.25</h3>
-                        <p>added a status.cafe widget! (creds to <a href="https://hal.nekoweb.org/">hal</a> for the
-                            clippy stylizing) also removed the aside poll and moon phase widget (may add poll back)!
-                            added a last.fm widget!</p>
-                    </article>
-                    <article>
-                        <h3>7.24.25</h3>
-                        <p>added a new webring! put the webrings in the footer on every page!</p>
-                    </article>
-                    <article>
-                        <h3>7.8.25</h3>
-                        <p>redesigned the resources page and added a new blog indicator!</p>
-                    </article>
-                    <article>
-                        <h3>7.1.25</h3>
-                        <p>finished my first shrine!! i hope to make more ^^ also adjusted the site buttons!! added
-                            buttons to welcome page!</p>
-                    </article>
-                    <article>
-                        <h3>6.19.25</h3>
-                        <p>added the music webring thingy to my footer!! ^_^</p>
-                    </article>
-                    <article>
-                        <h3>5.28.25</h3>
-                        <p>added a news scroller and a shrines page! shrines coming soon...</p>
-                    </article>
-                    <article>
-                        <h3>5.27.25</h3>
-                        <p>changed the link on the welcome page to be that silly eric andre gif :3</p>
-                    </article>
-                    <article>
-                        <h3>5.26.25</h3>
-                        <p>changed the blog post layout! now it's only the blog post, the disco mode button, and a go
-                            back button :] removed the "lm" prefix from the html files, and made a warning page!</p>
-                    </article>
-                    <article>
-                        <h3>5.25.25</h3>
-                        <p>i got my own domain!! both my neocities and nekoweb now redirect to my domain!</p>
-                    </article>
-                    <article>
-                        <h3>5.18.25</h3>
-                        <p>added new graphics (in every category) go check em out!!</p>
-                    </article>
-                    <article>
-                        <h3>5.9.25</h3>
-                        <p>made a new blog system! go test it ^_^</p>
-                    </article>
-                    <article>
-                        <h3>5.8.25</h3>
-                        <p>changed up the aside a bit and added an imood widget and moon phase cycle widget!!</p>
-                    </article>
-                    <article>
-                        <h3>5.4.25</h3>
-                        <p>made a new fucking layout!! there's also a new page! go explore!!</p>
-                    </article>
-                    <article>
-                        <h3>4.29.25</h3>
-                        <p>changed up the color scheme a tad bit! it's also probably a bit more readable with the white
-                            :]</p>
-                    </article>
-                    <article>
-                        <h3>4.3.25</h3>
-                        <p>added a 'disco mode', try it out by clicking the button labeled 'disco mode'! (warning for
-                            bright colors)</p>
-                    </article>
-                    <article>
-                        <h3>4.2.25</h3>
-                        <p>added the 'follow on nekoweb' button to the footer! feel free to make an account on <a
-                                href="https://nekoweb.org">nekoweb.org</a> and follow me!!</p>
-                    </article>
-                    <article>
-                        <h3>3.31.25</h3>
-                        <p>added new graphics!! go check them out!!!</p>
-                    </article>
-                    <article>
-                        <h3>3.27.25</h3>
-                        <p>added a favicon!! (its so cute i love it)</p>
-                    </article>
-                    <article>
-                        <h3>3.26.25</h3>
-                        <p>Added a different clock to the aside! Also added first snippet of JS, allows the contents of
-                            the aside and the footer buttons to be defined by a custom tag.</p>
-                    </article>
-                    <article>
-                        <h3>2.4.25</h3>
-                        <p>i've switched to nekoweb! my neocities page will soon redirect to my nekoweb website :] also
-                            got rid of the dividers :(( i had to get rid of them so that i could implement the new
-                            article positioning!</p>
-                    </article>
-                    <article>
-                        <h3>2.2.25</h3>
-                        <p>happy (late) new year! i finally changed the site button, so make sure to get the new code! i
-                            was thinking of doing a weekly kandi thing? let me know what you all think! until next
-                            update...</p>
-                    </article>
-                    <article>
-                        <h3>11.18.24</h3>
-                        <p>well hey there! seems like the website had a layout change again eh? i learned how to use css
-                            grid! the updates are on the homepage!! also album of the week!! hoping to make a new site
-                            button soon cuz current one is crappy..</p>
-                    </article>
-                    <article>
-                        <h3>10.7.24</h3>
-                        <p>changed navigation position and style! added a "back to top?" redirect on graphics page!</p>
-                    </article>
-                    <article>
-                        <h3>9.27.24</h3>
-                        <p>added icons to the graphics page!</p>
-                    </article>
-                    <article>
-                        <h3>9.26.24</h3>
-                        <p>woah!! the graphics page is done!!! go check it out!!</p>
-                    </article>
-                    <article>
-                        <h3>9.24.24</h3>
-                        <p>site button!! and some cool sites in the footer i suggest you check out!!</p>
-                    </article>
-                    <article>
-                        <h3>9.23.24</h3>
-                        <p>ooo new color!! and a new background!! new guestbook button too!! the graphics page is still
-                            a work in progress but i hope to have it done soon! stay tuned!</p>
-                    </article>
-                    <article>
-                        <h3>9.8.24</h3>
-                        <p>redesign!! now the updates simply have a spot over here :] not mobile friendly now, but maybe
-                            soon :p blog page will now be used for life updates as well! (graphics page coming soon!!)
-                        </p>
-                    </article>
-                    <article>
-                        <h3>7.1.24</h3>
-                        <p>woo!! update 2!! i made the site mobile friendly!! i plan on adding things to the side but
-                            idk what yet :p let me know what you guys think!!</p>
-                    </article>
-                    <article>
-                        <h3>5.26.24</h3>
-                        <p>hey! well, this is the first update, so i don't know what you expect.. but i'll mainly use
-                            this page as an update log for the site, but i will also update on my life from time to
-                            time. stay tuned!</p>
-                    </article>
-                </div>
-            </article>
-            <div class="site-buttons">
-                <article>
-                    <div class="title-article">
-                        <h3>site button</h3>
-                    </div>
-                    <p>put it on your site if you wish!</p>
-                    <img src="siteButton.png" width="88" height="31" />
-                    <br>
-                    <textarea cols="30" rows="4"
-                        readonly><a href="https://leefymoons-room.net"><img src="https://files.catbox.moe/7ww8ux.png" width="88" height="31"></a></textarea>
-                </article>
-                <article>
-                    <div class="title-article">
-                        <h3>sites i like</h3>
-                    </div>
-                    <a href="https://pikidiary.lol"><img src="pikibutton.png" /></a>
-                    <a href="https://moonlit-blossom.neocities.org"><img src="moonlitblossombutton.jpeg" /></a>
-                    <a href="https://kyurems-webroom.neocities.org"><img src="ksitebutton.png" /></a>
-                    <a href="https://graybox.lol/" target="_blank"><img
-                            src="https://graybox.lol/button?speed=60&style=1" alt="GrayBox 88x31 Button" width="88"
-                            height="31"></a>
-                    <a href="https://kaiserpug.nekoweb.org/"><img src="https://kaiserpug.neocities.org/button(4).png"
-                            alt="KaiserPug.org"></a>
-                    <a href="https://lukaszone.neocities.org/"><img
-                            src="https://lukaszone.neocities.org/kkkk (online-video-cutter.com).gif" alt="Lukas Zone"
-                            title="Zone Yourselves In!"></a>
-                    <a href="https://daniele63.com/"><img src="https://files.catbox.moe/5nn8i3.jpg" /></a>
-                    <a href="https://openbooks.neocities.org"><img src="https://openbooks.neocities.org/img/88x31.gif"
-                            height="31" width="88" style="image-rendering:pixelated;" /></a>
-                    <a href="https://miniwildpanda.neocities.org"><img src="https://files.catbox.moe/78mv2j.gif" /></a>
-                    <a href="https://thegibusguy.neocities.org"><img src="https://files.catbox.moe/yua6cx.png" /></a>
-                    <a href="https://t-hates-you.neocities.org/" target="_blank"><img
-                            src="https://file.garden/ZoyWx9J8Swks2aed/evilfuckingwebsite.webp"></a>
-                    <a href="https://wheatley-science.neocities.org/"><img
-                            src="https://files.catbox.moe/li94r4.gif"></a>
-                    <a href="https://maxboi.neocities.org"><img src="https://files.catbox.moe/t8r38w.png" /></a>
-                    <a href="https://kuroi.com.br/"><img src="https://files.catbox.moe/2z8jar.png" /></a>
-                    <a href="https://xxstephsroomxx.neocities.org/" target="_blank"><img
-                            src="https://files.catbox.moe/6twpl4.png" height=31 width=88 alt="stephs room"></a>
-                    <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
-                    <a href="https://guh.nekoweb.org/" target="_blank"><img
-                            src="https://guh.nekoweb.org/myguhsite.gif"></a>
-                    <a href="https://salutationsjosh.neocities.org/"><img
-                            src="https://salutationsjosh.neocities.org/assets/button/button.gif"></a>
-                    <a href="https://lochi.nekoweb.org" target="_blank"> <img
-                            src="https://lochi.nekoweb.org/images/buttons/lochi.gif" /></a>
-                    <a href="https://ginasfs.neocities.org/"><img src="https://ginasfs.neocities.org/images/button2.png"
-                            width="88px"></a>
-                    <a href="https://texasisforever.com/"><img src="https://files.catbox.moe/fav8kc.png"
-                            width="88px"></a>
-                    <a href="https://sillyspecimen.neocities.org/"><img alt="silly website :P"
-                            src="https://sillyspecimen.neocities.org/buttonthingwow.gif"></a>
-                    <a href="https://arataka.moe/" target="_blank"><img alt="Laith Rai7an"
-                            src="https://arataka.moe/image/button/arataka-a.gif" /></a>
-                    <a href='https://potentia.moe'><img src='https://potentia.moe/img/tm.gif' title='potentia.moe'></a>
-                    <a href="https://twentyphanday.nekoweb.org/" target="_blank"><img
-                            src="https://i.postimg.cc/kG46XqhD/ezgif-16d5f3c131cb7a.gif"><img></a>
-                    <a href="https://meyr0s3.neocities.org/"><img
-                            src="https://64.media.tumblr.com/eede0e56a5894b048a0fe5703716b57d/418c63fdabf4f018-b9/s100x200/9e18343b242936031b54f99782e4f24e1413e264.gifv"></a>
-                    <a href="https://moonkiip.neocities.org/"><img
-                            src="https://moonkiip.neocities.org/mkbutton.png"></a>
-                    <a href="https://xxmyonlyfrenxx.neocities.org/"><img
-                            src="https://neocities.org/site_thumbnails/99/24/xxmyonlyfrenxx/buttons/mybutton.png.210x158.webp"
-                            width="88" height="31"></a>
-                    <a href="https://mayonmnnaise.nekoweb.org" target="_blank"><img
-                            src="https://mayonmnnaise.nekoweb.org/button.png"></a>
-                    <a href="https://hal.nekoweb.org/" target="_blank"><img src="https://hal.nekoweb.org/sitebutton.png"
-                            alt="HAL"></a>
-                    <a href="https://sclptures.neocities.org"><img src="https://i.ibb.co/DP3qxn22/pagebutton2.png"></a>
-                    <a href="https://yvas.me/"><img src="https://i.ibb.co/35qPj4KN/savy-banner-d-Fh-Ll-H1h.gif"></a>
-                    <a href="https://cyberwright.nekoweb.org/" target="_blank"><img
-                            src="https://cyberwright.nekoweb.org/imgs/cyberwright-btn.png"
-                            alt="text 'cyberwright' on a generic blue sky green grass background"></a>
-                    <a href="https://random.diamondbyte.org/"><img src="https://i.postimg.cc/1XkXvj09/button.png"></a>
-                    <a href="https://chipsfunfun.neocities.org/"><img src="https://i.ibb.co/s9355Dx4/image.png"></a>
-                    <a href="https://acidicalchemist.nekoweb.org"><img src="https://i.ibb.co/3mtnbFZT/image.png"
-                            style="width:88px; image-rendering:pixelated;"></a>
-                    <a href="https://crosstalk.im/"><img src="https://i.ibb.co/7NGKnXMm/crosstalk-Button.png"></a>
-                    <a href="https://rynizx.xyz"><img src="https://rynizx.xyz/rynibutton.gif" alt="ryni button"></a>
-                </article>
+              </div>
             </div>
-        </main>
-        <footer>
-            <p>power to the local dreamer. |-/</p>
-            <div class="webrings">
-                <map name="noaimini7">
-                    <area href="https://baccyflap.com/noai" shape="rect" coords="15,3,72,27" target="_blank"
-                        alt="no ai webring" title="no ai webring">
-                    <area href="https://baccyflap.com/noai/?prv&s=lrm" target="_top" shape="rect" coords="3,6,12,27"
-                        alt="previous" title="previous">
-                    <area href="https://baccyflap.com/noai/?nxt&s=lrm" target="_top" shape="rect" coords="75,6,84,27"
-                        alt="next" title="next">
-                </map>
-                <img usemap="#noaimini7" src="https://baccyflap.com/noai/miniwidget7.gif"
-                    alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down">
+            <div class="new-article">
+              <ul>
+                <li>
+                  mood:
+                  <a href="https://www.imood.com/users/leefylavish"
+                    ><img
+                      src="https://moods.imood.com/display/uname-leefylavish/fg-FFFFFF/trans-1/imood.gif"
+                      alt="The current mood of leefylavish at www.imood.com"
+                      border="0"
+                  /></a>
+                </li>
+                <li>interest: javascript</li>
+                <li>game: life is strange remastered</li>
+                <li>movie: frankenstein (2025)</li>
+                <li>book: the people talk by benjamin appel</li>
+                <li>youtuber: game grumps</li>
+              </ul>
             </div>
-        </footer>
+          </div>
+        </article>
+        <article>
+          <h1>updates</h1>
+          <div class="updates-container">
+            <div class="update">
+                <h2>11.23.25</h2>
+                <p>
+                    NEW REDESIGN!!! go check out everything!!
+                </p>
+            </div>
+            <div class="update">
+              <h2>11.8.25</h2>
+              <p>
+                removed the shows section from what's shaking and added
+                youtubers! i watch youtube more than shows, what do you want
+                from me...
+              </p>
+            </div>
+            <div class="update">
+              <h2>10.20.25</h2>
+              <p>
+                added a what's shaking page! see what's in the now with my
+                interests ^^ also removed the album of the week and added my
+                socials!
+              </p>
+            </div>
+            <div class="update">
+              <h2>9.17.25</h2>
+              <p>
+                changed the last.fm widget! widget was made by my sweet friend
+                <a href="https://github.com/Savy011/lastfm-widget">savy</a> :]
+              </p>
+            </div>
+            <div class="update">
+              <h2>9.16.25</h2>
+              <p>added a subnav for about and graphics!</p>
+            </div>
+            <div class="update">
+              <h2>9.15.25</h2>
+              <p>
+                changed the title image for articles, changed the height of the
+                two site button sections, and changed the navigation styling ^^
+              </p>
+            </div>
+            <div class="update">
+              <h2>8.20.25</h2>
+              <p>
+                revamped my twenty one pilots shrine and added a discography
+                page to it!
+              </p>
+            </div>
+            <div class="update">
+              <h2>8.17.25</h2>
+              <p>
+                started to make graphics, so i added a section for my graphics
+                on the graphics page! and i also added a little kitty on the
+                landing page ^^
+              </p>
+            </div>
+            <div class="update">
+              <h2>7.31.25</h2>
+              <p>
+                added a status.cafe widget! (creds to
+                <a href="https://hal.nekoweb.org/">hal</a> for the clippy
+                stylizing) also removed the aside poll and moon phase widget
+                (may add poll back)! added a last.fm widget!
+              </p>
+            </div>
+            <div class="update">
+              <h2>7.24.25</h2>
+              <p>
+                added a new webring! put the webrings in the footer on every
+                page!
+              </p>
+            </div>
+            <div class="update">
+              <h2>7.8.25</h2>
+              <p>
+                redesigned the resources page and added a new blog indicator!
+              </p>
+            </div>
+            <div class="update">
+              <h2>7.1.25</h2>
+              <p>
+                finished my first shrine!! i hope to make more ^^ also adjusted
+                the site buttons!! added buttons to welcome page!
+              </p>
+            </div>
+            <div class="update">
+              <h2>6.19.25</h2>
+              <p>added the music webring thingy to my footer!! ^_^</p>
+            </div>
+            <div class="update">
+              <h2>5.28.25</h2>
+              <p>
+                added a news scroller and a shrines page! shrines coming soon...
+              </p>
+            </div>
+            <div class="update">
+              <h2>5.27.25</h2>
+              <p>
+                changed the link on the welcome page to be that silly eric andre
+                gif :3
+              </p>
+            </div>
+            <div class="update">
+              <h2>5.26.25</h2>
+              <p>
+                changed the blog post layout! now it's only the blog post, the
+                disco mode button, and a go back button :] removed the "lm"
+                prefix from the html files, and made a warning page!
+              </p>
+            </div>
+            <div class="update">
+              <h2>5.25.25</h2>
+              <p>
+                i got my own domain!! both my neocities and nekoweb now redirect
+                to my domain!
+              </p>
+            </div>
+            <div class="update">
+              <h2>5.18.25</h2>
+              <p>added new graphics (in every category) go check em out!!</p>
+            </div>
+            <div class="update">
+              <h2>5.9.25</h2>
+              <p>made a new blog system! go test it ^_^</p>
+            </div>
+            <div class="update">
+              <h2>5.8.25</h2>
+              <p>
+                changed up the aside a bit and added an imood widget and moon
+                phase cycle widget!!
+              </p>
+            </div>
+            <div class="update">
+              <h2>5.4.25</h2>
+              <p>
+                made a new fucking layout!! there's also a new page! go
+                explore!!
+              </p>
+            </div>
+            <div class="update">
+              <h2>4.29.25</h2>
+              <p>
+                changed up the color scheme a tad bit! it's also probably a bit
+                more readable with the white :]
+              </p>
+            </div>
+            <div class="update">
+              <h2>4.3.25</h2>
+              <p>
+                added a 'disco mode', try it out by clicking the button labeled
+                'disco mode'! (warning for bright colors)
+              </p>
+            </div>
+            <div class="update">
+              <h2>4.2.25</h2>
+              <p>
+                added the 'follow on nekoweb' button to the footer! feel free to
+                make an account on
+                <a href="https://nekoweb.org">nekoweb.org</a> and follow me!!
+              </p>
+            </div>
+            <div class="update">
+              <h2>3.31.25</h2>
+              <p>added new graphics!! go check them out!!!</p>
+            </div>
+            <div class="update">
+              <h2>3.27.25</h2>
+              <p>added a favicon!! (its so cute i love it)</p>
+            </div>
+            <div class="update">
+              <h2>3.26.25</h2>
+              <p>
+                Added a different clock to the aside! Also added first snippet
+                of JS, allows the contents of the aside and the footer buttons
+                to be defined by a custom tag.
+              </p>
+            </div>
+            <div class="update">
+              <h2>2.4.25</h2>
+              <p>
+                i've switched to nekoweb! my neocities page will soon redirect
+                to my nekoweb website :] also got rid of the dividers :(( i had
+                to get rid of them so that i could implement the new article
+                positioning!
+              </p>
+            </div>
+            <div class="update">
+              <h2>2.2.25</h2>
+              <p>
+                happy (late) new year! i finally changed the site button, so
+                make sure to get the new code! i was thinking of doing a weekly
+                kandi thing? let me know what you all think! until next
+                update...
+              </p>
+            </div>
+            <div class="update">
+              <h2>11.18.24</h2>
+              <p>
+                well hey there! seems like the website had a layout change again
+                eh? i learned how to use css grid! the updates are on the
+                homepage!! also album of the week!! hoping to make a new site
+                button soon cuz current one is crappy..
+              </p>
+            </div>
+            <div class="update">
+              <h2>10.7.24</h2>
+              <p>
+                changed navigation position and style! added a "back to top?"
+                redirect on graphics page!
+              </p>
+            </div>
+            <div class="update">
+              <h2>9.27.24</h2>
+              <p>added icons to the graphics page!</p>
+            </div>
+            <div class="update">
+              <h2>9.26.24</h2>
+              <p>woah!! the graphics page is done!!! go check it out!!</p>
+            </div>
+            <div class="update">
+              <h2>9.24.24</h2>
+              <p>
+                site button!! and some cool sites in the footer i suggest you
+                check out!!
+              </p>
+            </div>
+            <div class="update">
+              <h2>9.23.24</h2>
+              <p>
+                ooo new color!! and a new background!! new guestbook button
+                too!! the graphics page is still a work in progress but i hope
+                to have it done soon! stay tuned!
+              </p>
+            </div>
+            <div class="update">
+              <h2>9.8.24</h2>
+              <p>
+                redesign!! now the updates simply have a spot over here :] not
+                mobile friendly now, but maybe soon :p blog page will now be
+                used for life updates as well! (graphics page coming soon!!)
+              </p>
+            </div>
+            <div class="update">
+              <h2>7.1.24</h2>
+              <p>
+                woo!! update 2!! i made the site mobile friendly!! i plan on
+                adding things to the side but idk what yet :p let me know what
+                you guys think!!
+              </p>
+            </div>
+            <div class="update">
+              <h2>5.26.24</h2>
+              <p>
+                hey! well, this is the first update, so i don't know what you
+                expect.. but i'll mainly use this page as an update log for the
+                site, but i will also update on my life from time to time. stay
+                tuned!
+              </p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h1>sites galore!</h1>
+          <div class="site-articles-container">
+            <div class="site-articles">
+              <p>add my site button! (or don't and just be mean...:[)</p>
+              <img src="images/siteButton.png" />
+              <textarea
+                cols="30"
+                rows="5"
+                readonly=""
+                style="background-color: #202020; color: #fff"
+              >
+<a href="https://leefymoons-room.net"><img src="https://files.catbox.moe/7ww8ux.png" width="88" height="31"></a></textarea
+              >
+            </div>
+            <div class="site-articles">
+              <p>here's some sites that i find very cool!</p>
+              <a href="https://pikidiary.lol"
+                ><img src="images/pikibutton.png"
+              /></a>
+              <a href="https://moonlit-blossom.neocities.org"
+                ><img src="images/moonlitblossombutton.jpeg"
+              /></a>
+              <a href="https://kyurems-webroom.neocities.org"
+                ><img src="images/ksitebutton.png"
+              /></a>
+              <a href="https://graybox.lol/" target="_blank"
+                ><img
+                  src="https://graybox.lol/button?speed=60&style=1"
+                  alt="GrayBox 88x31 Button"
+                  width="88"
+                  height="31"
+              /></a>
+              <a href="https://kaiserpug.nekoweb.org/"
+                ><img
+                  src="https://kaiserpug.neocities.org/button(4).png"
+                  alt="KaiserPug.org"
+              /></a>
+              <a href="https://lukaszone.neocities.org/"
+                ><img
+                  src="https://lukaszone.neocities.org/kkkk (online-video-cutter.com).gif"
+                  alt="Lukas Zone"
+                  title="Zone Yourselves In!"
+              /></a>
+              <a href="https://daniele63.com/"
+                ><img src="https://files.catbox.moe/5nn8i3.jpg"
+              /></a>
+              <a href="https://openbooks.neocities.org"
+                ><img
+                  src="https://openbooks.neocities.org/img/88x31.gif"
+                  height="31"
+                  width="88"
+                  style="image-rendering: pixelated"
+              /></a>
+              <a href="https://miniwildpanda.neocities.org"
+                ><img src="https://files.catbox.moe/78mv2j.gif"
+              /></a>
+              <a href="https://thegibusguy.neocities.org"
+                ><img src="https://files.catbox.moe/yua6cx.png"
+              /></a>
+              <a href="https://t-hates-you.neocities.org/" target="_blank"
+                ><img
+                  src="https://file.garden/ZoyWx9J8Swks2aed/evilfuckingwebsite.webp"
+              /></a>
+              <a href="https://wheatley-science.neocities.org/"
+                ><img src="https://files.catbox.moe/li94r4.gif"
+              /></a>
+              <a href="https://maxboi.neocities.org"
+                ><img src="https://files.catbox.moe/t8r38w.png"
+              /></a>
+              <a href="https://kuroi.com.br/"
+                ><img src="https://files.catbox.moe/2z8jar.png"
+              /></a>
+              <a href="https://xxstephsroomxx.neocities.org/" target="_blank"
+                ><img
+                  src="https://files.catbox.moe/6twpl4.png"
+                  height="31"
+                  width="88"
+                  alt="stephs room"
+              /></a>
+              <a href="https://dimden.dev/"
+                ><img src="https://dimden.dev/services/images/88x31.gif"
+              /></a>
+              <a href="https://guh.nekoweb.org/" target="_blank"
+                ><img src="https://guh.nekoweb.org/myguhsite.gif"
+              /></a>
+              <a href="https://salutationsjosh.neocities.org/"
+                ><img
+                  src="https://salutationsjosh.neocities.org/assets/button/button.gif"
+              /></a>
+              <a href="https://lochi.nekoweb.org" target="_blank">
+                <img src="https://lochi.nekoweb.org/images/buttons/lochi.gif"
+              /></a>
+              <a href="https://ginasfs.neocities.org/"
+                ><img
+                  src="https://ginasfs.neocities.org/images/button2.png"
+                  width="88px"
+              /></a>
+              <a href="https://texasisforever.com/"
+                ><img src="https://files.catbox.moe/fav8kc.png" width="88px"
+              /></a>
+              <a href="https://sillyspecimen.neocities.org/"
+                ><img
+                  alt="silly website :P"
+                  src="https://sillyspecimen.neocities.org/buttonthingwow.gif"
+              /></a>
+              <a href="https://arataka.moe/" target="_blank"
+                ><img
+                  alt="Laith Rai7an"
+                  src="https://arataka.moe/image/button/arataka-a.gif"
+              /></a>
+              <a href="https://potentia.moe"
+                ><img
+                  src="https://potentia.moe/img/tm.gif"
+                  title="potentia.moe"
+              /></a>
+              <a href="https://twentyphanday.nekoweb.org/" target="_blank"
+                ><img
+                  src="https://i.postimg.cc/kG46XqhD/ezgif-16d5f3c131cb7a.gif" /><img
+              /></a>
+              <a href="https://meyr0s3.neocities.org/"
+                ><img
+                  src="https://64.media.tumblr.com/eede0e56a5894b048a0fe5703716b57d/418c63fdabf4f018-b9/s100x200/9e18343b242936031b54f99782e4f24e1413e264.gifv"
+              /></a>
+              <a href="https://moonkiip.neocities.org/"
+                ><img src="https://moonkiip.neocities.org/mkbutton.png"
+              /></a>
+              <a href="https://xxmyonlyfrenxx.neocities.org/"
+                ><img
+                  src="https://neocities.org/site_thumbnails/99/24/xxmyonlyfrenxx/buttons/mybutton.png.210x158.webp"
+                  width="88"
+                  height="31"
+              /></a>
+              <a href="https://mayonmnnaise.nekoweb.org" target="_blank"
+                ><img src="https://mayonmnnaise.nekoweb.org/button.png"
+              /></a>
+              <a href="https://hal.nekoweb.org/" target="_blank"
+                ><img src="https://hal.nekoweb.org/sitebutton.png" alt="HAL"
+              /></a>
+              <a href="https://sclptures.neocities.org"
+                ><img src="https://i.ibb.co/DP3qxn22/pagebutton2.png"
+              /></a>
+              <a href="https://yvas.me/"
+                ><img
+                  src="https://i.ibb.co/35qPj4KN/savy-banner-d-Fh-Ll-H1h.gif"
+              /></a>
+              <a href="https://cyberwright.nekoweb.org/" target="_blank"
+                ><img
+                  src="https://cyberwright.nekoweb.org/imgs/cyberwright-btn.png"
+                  alt="text 'cyberwright' on a generic blue sky green grass background"
+              /></a>
+              <a href="https://random.diamondbyte.org/"
+                ><img src="https://i.postimg.cc/1XkXvj09/button.png"
+              /></a>
+              <a href="https://chipsfunfun.neocities.org/"
+                ><img src="https://i.ibb.co/s9355Dx4/image.png"
+              /></a>
+              <a href="https://acidicalchemist.nekoweb.org"
+                ><img
+                  src="https://i.ibb.co/3mtnbFZT/image.png"
+                  style="width: 88px; image-rendering: pixelated"
+              /></a>
+              <a href="https://crosstalk.im/"
+                ><img src="https://i.ibb.co/7NGKnXMm/crosstalk-Button.png"
+              /></a>
+              <a href="https://rynizx.xyz"
+                ><img src="https://rynizx.xyz/ryniButton.gif" alt="ryni button"
+              /></a>
+              <a href="http://silica.codes/"
+                ><img src="images/crystalwebsiteButton.gif"
+              /></a>
+              <a href="https://preloading.dev"
+                ><img src="images/preloadingButton.gif"
+              /></a>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <p>site made by yours truly :]</p>
+      </footer>
     </div>
-    <button class="disco-button" onclick="discoMode()" title="warning for bright colors!">disco mode</button>
-    <div class="statuscafe-container">
-        <div id="statuscafe">
-            <div id="statuscafe-username"></div>
-            <div id="statuscafe-content"></div>
-        </div>
-        <img class="clippy" src="clippy.png" width="150px">
-    </div>
-    <script src="https://status.cafe/current-status.js?name=leefylavish" defer></script>
-</body>
+  </body>
 </html>

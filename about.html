@@ -1,155 +1,255 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link href="style.css" rel="stylesheet" id="default-style">
-    <script type="module" src="script.js"></script>
-    <link rel="icon" type="image/x-icon" href="site-favicon.ico">
-    <title>leefymoon's room</title>
-    <base target="_blank">
-</head>
-
-<body>
-    <div id="disco-mode">
-        <img src="discoBall.gif" width="100px">
-        <script>
-            document.getElementById("disco-mode").style.display = "none";
-
-            function discoMode() {
-                var x = document.getElementById("disco-mode");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
-            }
-        </script>
-    </div>
-    <div class="grid-container">
-        <header id="top">
-            <img src="site_header2.png" width="973px" height="148px" />
-        </header>
-        <div class="marquee">
-            <div class="marquee-content">
-                <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at
-                    crosstalk.im //</p>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="site-favicon.ico">
+        <base target="_blank">
+    </head>
+    <body>
+        <div class="grid-container">
+            <header>
+                <img src="banner1.png" id="banner">
+                <div id="banner-creds"></div>
+                <script>
+                    var img = [
+                        "leefy",
+	                    "bespoke",
+	                    "zookajoe",
+	                    "hunter",
+                        "epicness",
+                        "li",
+                        "ryni",
+                        "lore"
+                        ]
+                        banner = Math.floor(Math.random() * img.length);
+                        (document.getElementById("banner").src = "images/" + img[banner] + ".png")
+                        (document.getElementById("banner-creds").textContent = "made by " + img[banner])
+                </script>
+            </header>
+            <div class="marquee">
+                <div class="marquee-content">
+                    <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at crosstalk.im //</p>
+                </div>
+                <div class="marquee-content">
+                    <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at crosstalk.im //</p>
+                </div>
             </div>
-            <div class="marquee-content">
-                <p>christmas time is hereeeeee // i need to grind ow2 BADLY // join crosstalk today at
-                    crosstalk.im //</p>
-            </div>
-        </div>
-        <nav id="nav">
-            <h2>navigation</h2>
-            <div class="line-break"></div>
-            <ul>
-                <a href="home.html" target="_self">
-                    <li>home</li>
-                </a>
-                <div class="subnav-container">
-                    <a href="about.html" target="_self">
-                        <li class="subnav-li">about</li>
-                    </a>
-                    <div class="subnav">
-                        <a href="kandi.html" target="_self">
-                            <li>kandi</li>
-                        </a>
-                        <a href="music.html" target="_self">
-                            <li>music</li>
-                        </a>
+            <nav>
+                <button><a href="home.html" target="_self">home</a></button>
+                <button><a href="about.html" target="_self">about</a></button>
+                <button><a href="blog.html" target="_self">blog</a></button>
+                <button><a href="graphics.html" target="_self">graphics</a></button>
+                <button><a href="resources.html" target="_self">resources</a></button>
+                <button><a href="shrines.html" target="_self">shrines</a></button>
+            </nav>
+            <main>
+                <article id="about-article">
+                    <h1>who art thou?</h1>
+                    <table>
+                        <tr>
+                            <th>about me!</th>
+                        </tr>
+                        <tr>
+                            <td><img src="images/leefyPFP.png"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <marquee behavior="alternate">
+                                    <img src="images/imvuBadge1.gif">
+                                    <img src="images/imvuBadge2.webp">
+                                    <img src="images/imvuBadge3.webp">
+                                    <img src="images/imvuBadge4.webp">
+                                    <img src="images/imvuBadge5.webp">
+                                    <img src="images/imvuBadge6.webp">
+                                    <img src="images/imvuBadge7.webp">
+                                    <img src="images/imvuBadge8.webp">
+                                    <img src="images/imvuBadge9.webp">
+                                    <img src="images/imvuBadge10.webp">
+                                    <img src="images/imvuBadge11.webp">
+                                    <img src="images/imvuBadge12.webp">
+                                    <img src="images/imvuBadge13.webp">
+                                    <img src="images/imvuBadge14.webp">
+                                    <img src="images/imvuBadge15.webp">
+                                    <img src="images/imvuBadge16.webp" height="18px">
+                                    <img src="images/imvuBadge17.webp">
+                                    <img src="images/imvuBadge18.jpg">
+                                    <img src="images/imvuBadge19.gif">
+                                    <img src="images/imvuBadge20.png">
+                                </marquee>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>name: leefy</td>
+                        </tr>
+                        <tr>
+                            <td>nicknames: leef, leefymoon, leefylavish, leefyexplodes, explosion</td>
+                        </tr>
+                        <tr>
+                            <td>birthday: february 7th</td>
+                        </tr>
+                        <tr>
+                            <td>zodiac sign: aquarius</td>
+                        </tr>
+                        <tr>
+                            <td>age: 15</td>
+                        </tr>
+                        <tr>
+                            <td>interests: music, coding, tech, kandi, graphic design, art, gaming, and sleeping :3</td>
+                        </tr>
+                        <tr>
+                            <td>favorite food: taco bell</td>
+                        </tr>
+                        <tr>
+                            <td>favorite season: winter</td>
+                        </tr>
+                        <tr>
+                            <td>favorite random object: my flipphone</td>
+                        </tr>
+                    </table>
+                    <div class="about-right-col">
+                        <div class="quizzes">
+                            <h2>some quizzes i've taken!</h2>
+                            <a href="http://www.nerdtests.com/ft_nq.php">
+                            <img src="http://www.nerdtests.com/images/ft/nq/7d68b6edd3.gif" alt="I am nerdier than 81% of all people. Are you a nerd? Click here to take the Nerd Test, get nerdy images and jokes, and talk on the nerd forum!"></a>
+                            <a href="http://www.nerdtests.com/ft_nt2.php">
+                            <img src="http://www.nerdtests.com/images/badge/nt2/5dc50a9495f9c08d.png" alt="NerdTests.com says I'm a Highly Dorky High Nerd.  Click here to take the Nerd Test, get nerdy images and jokes, and write on the nerd forum!">
+                            </a>
+                            <a href="https://web.archive.org/web/20021228215201/http://www.zenhex.com/tests/tarot/">
+                            <img src="https://web.archive.org/web/20021228215201im_/http://www.zenhex.com/tests/tarot/7.jpg" border="0" height="301" width="175"><br>Which tarot card are you?</a>
+                            <a href="http://dokodemo.neocities.org/gamelounge/splatidol.html"><img src="http://dokodemo.neocities.org/gamelounge/splatoon/pearl.png" alt="Pearl" title="You're most like Pearl from Off The Hook!"></a>
+                            <A href="https://theotaku.com/quizzes/view/3760/what_type_of_dere_are_you%3F_"><img width="95%" border="0" src="http://www.theotaku.com/guru_results/3760_DereDere.jpg"/><br /></a><A href="https://theotaku.com/quizzes/view/3760/what_type_of_dere_are_you%3F_"></A><br />Hosted By theOtaku.com: <a href="http://www.theotaku.com" title="Anime"></a>
+                            <A href="https://www.theotaku.com/quizzes/view/3209/what_soul_eater_character_are_you%3F"><img width="95%" border="0" src="http://www.theotaku.com/guru_results/3209_Soul_Evans.jpg" alt="What Soul Eater Character Are You?" /><br /></a><A href="https://www.theotaku.com/quizzes/view/3209/what_soul_eater_character_are_you%3F"></A><br />Hosted By theOtaku.com: <a href="http://www.theotaku.com" title="Anime"></a>
+                            <img src="https://web.archive.org/web/20040812013343im_/http://www.drudabear.com/cheerbearaward.jpg"> <a href="https://web.archive.org/web/20040812013343/http://www.drudabear.com/quiz.htm"></a>
+                        </div>
+                        <div class="about-stamps">
+                            <marquee scrollamount="8">
+                                <img src="images/stamp1.png">
+                                <img src="images/stamp2.png">
+                                <img src="images/stamp3.png">
+                                <img src="images/stamp4.png">
+                                <img src="images/stamp5.webp">
+                                <img src="images/stamp6.png">
+                                <img src="images/stamp7.webp">
+                                <img src="images/stamp8.webp">
+                                <img src="images/stamp9.jpg">
+                                <img src="images/stamp10.webp">
+                                <img src="images/stamp11.webp">
+                                <img src="images/stamp12.png">
+                                <img src="images/stamp13.webp">
+                                <img src="images/stamp14.png">
+                                <img src="images/stamp15.png">
+                                <img src="images/stamp16.png">
+                                <img src="images/stamp17.png">
+                                <img src="images/stamp18.webp">
+                                <img src="images/stamp19.webp">
+                                <img src="images/stamp20.webp">
+                                <img src="images/stamp21.png">
+                                <img src="images/stamp22.webp">
+                                <img src="images/stamp23.png">
+                                <img src="images/stamp24.png">
+                                <img src="images/stamp25.webp">
+                            </marquee>
+                        </div>
+                        <div class="friends">
+                            <h2>my friends!</h2>
+                            <p>my irls (o, s, h, m, j, g, s), kris jenner, lore, jess, ryni, epicness, prepostfreeperitreeloading, random, tommy d, li, invis, redtech, hunter, lloyd, savy</p>
+                        </div>
                     </div>
-                </div>
-                <a href="blog.html" target="_self">
-                    <li><img class="blognew" src="new.gif">blog</li>
-                </a>
-                <div class="subnav-container">
-                    <a href="graphics.html" target="_self">
-                        <li class="subnav-li">graphics</li>
-                    </a>
-                    <div class="subnav">
-                        <a href="graphics.html#blinkies" target="_self">
-                            <li>blinkies</li>
-                        </a>
-                        <a href="graphics.html#stamps" target="_self">
-                            <li>stamps</li>
-                        </a>
-                        <a href="graphics.html#buttons" target="_self">
-                            <li>buttons</li>
-                        </a>
-                        <a href="graphics.html#icons" target="_self">
-                            <li>icons</li>
-                        </a>
+                </article>
+                <article id="about-socials" style="image-rendering: pixelated;">
+                    <h1>socials!</h1>
+                    <p>you can find me on the following platforms!</p>
+                    <div class="socials" style="flex-direction: column;">
+                        <img src="images/wlm-icon.png" width="60px">
+                        <div>
+                            <h2>windows live messenger</h2>
+                            <p>leefyexplodes@leefymoons-room.net</p>
+                        </div>
                     </div>
-                </div>
-                <a href="resources.html" target="_self">
-                    <li><img class="resrcnew" src="new.gif">resources</li>
-                </a>
-                <a href="shrines.html" target="_self">
-                    <li>shrines</li>
-                </a>
-                <a href="whatsshaking.html" target="_self">
-                    <li>what's shaking</li>
-                </a>
-            </ul>
-        </nav>
-        <aside>
-            <aside-doodad></aside-doodad>
-            <div class="lastfm">
-                <p><a href="https://last.fm/user/leefymoon/">leefymoon</a> last listened to:</p>
-                <last-fm-widget auto-update polling-rate="10"></last-fm-widget>
-                <script type="module" src="widget.js"></script>
-                <p class="savy">made by <a href="https://github.com/Savy011/lastfm-widget">savy</a></p>
-            </div>
-        </aside>
-        <main>
-            <div class="top-title">
-                <h1>about</h1>
-                <p>the page where i tell you about me. maybe you'll learn a thing or two from it..</p>
-            </div>
-            <div class="line-break"></div>
-            <article>
-                <div class="title-article">
-                    <h3>about me</h3>
-                </div>
-                <p>hellooo, i'm leefy, the creator of this website! i'm 15 and i live in the us. i started coding a few
-                    years ago on spacehey to customize my profile, then that led to actually learning html and css
-                    online. i'm currently taking computer science in school, so maybe you'll see improvment in my
-                    website?</p>
-            </article>
-            <article>
-                <div class="title-article">
-                    <h3>interests</h3>
-                </div>
-                <p>i'm really into ipods, music, tech, the portal games, 2000s culture, kandi, gaming, art, and of
-                    course coding!! check out the navigation bar to learn more about my interests!</p>
-            </article>
-        </main>
-        <footer>
-            <p>power to the local dreamer. |-/</p>
-            <div class="webrings">
-
-                <map name="noaimini7">
-                    <area href="https://baccyflap.com/noai" shape="rect" coords="15,3,72,27" target="_blank"
-                        alt="no ai webring" title="no ai webring">
-                    <area href="https://baccyflap.com/noai/?prv&s=lrm" target="_top" shape="rect" coords="3,6,12,27"
-                        alt="previous" title="previous">
-                    <area href="https://baccyflap.com/noai/?nxt&s=lrm" target="_top" shape="rect" coords="75,6,84,27"
-                        alt="next" title="next">
-                </map>
-                <img usemap="#noaimini7" src="https://baccyflap.com/noai/miniwidget7.gif"
-                    alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down">
-            </div>
-        </footer>
-    </div>
-    <button class="disco-button" onclick="discoMode()" title="warning for bright colors!">disco mode</button>
-    <div class="statuscafe-container">
-        <div id="statuscafe">
-            <div id="statuscafe-username"></div>
-            <div id="statuscafe-content"></div>
+                    <div class="socials">
+                        <img src="images/spacehey-icon.png" width="60px">
+                        <div>
+                            <h2>spacehey</h2>
+                            <p>leefymoon</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <img src="images/piki-icon.png" width="60px">
+                        <div>
+                            <h2>pikidiary</h2>
+                            <p>leefylavish</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <img src="images/forums-icon.png" width="60px">
+                        <div>
+                            <h2>fort1nd forums</h2>
+                            <p>leefymoon</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <img src="images/tumblr-icon.png" width="60px">
+                        <div>
+                            <h2>tumblr</h2>
+                            <p>leefymoon</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <img src="images/discord-icon.png" width="60px">\
+                        <div>
+                            <h2>discord</h2>
+                            <p>leefylavish</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h1>webrings!</h1>
+                    <map name="noaimini7">
+                        <area href="https://baccyflap.com/noai" shape="rect" coords="15,3,72,27" target="_blank" alt="no ai webring" title="no ai webring">
+                        <area href="https://baccyflap.com/noai/?prv&s=lrm" target="_top" shape="rect" coords="3,6,12,27" alt="previous" title="previous">
+                        <area href="https://baccyflap.com/noai/?nxt&s=lrm" target="_top" shape="rect" coords="75,6,84,27" alt="next" title="next">
+                    </map>
+                    <img usemap="#noaimini7" src="https://baccyflap.com/noai/miniwidget7.gif" alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down">
+                </article>
+                <article>
+                    <h1>music <3</h1>
+                    <p>if it isn't clear enough, i LOVE music! music alone has solely helped me through my journeys in life. some of my favorite artists include 311, twenty one pilots, fall out boy, dave matthews band, pierce the veil, my chemical romance, system of a down, static-x, and more!! here's some of my favorite albums :]</p>
+                    <div class="albums-container">
+                        <img src="images/album1.jpg" title="311 - Self Titled (30th Anniversary Edition)">
+                        <img src="images/album2.jpg" title="311 - Transistor">
+                        <img src="images/album3.jpg" title="311 - Evolver">
+                        <img src="images/album4.jpg" title="twenty one pilots - Vessel">
+                        <img src="images/album5.jpg" title="Fall Out Boy - Infinity On High">
+                        <img src="images/album6.jpg" title="Dave Matthews Band - Before These Crowded Streets">
+                        <img src="images/album7.jpg" title="Pierce The Veil - A Flair For The Dramatic">
+                        <img src="images/album8.jpg" title="My Chemical Romance - Three Cheers For Sweet Revenge">
+                        <img src="images/album9.jpg" title="Panic! At The Disco - A Fever Out Can't Sweat Out">
+                        <img src="images/album10.jpg" title="From First To Last - Dear Diary, My Teen Angst Has A Body Count">
+                        <img src="images/album11.jpg" title="Chiodos - All's Well That Ends Well">
+                        <img src="images/album12.jpg" title="System Of A Down - Self Titled">
+                    </div>
+                </article>
+                <article>
+                    <h1>games</h1>
+                    <p> i mainly play on pc, but i play on my switch sometimes too ^^ you can add my steam <a href="https://steamcommunity.com/profiles/76561199156330743/">here</a> if you're down to play any games! some games i love are minecraft, overwatch 2, portal 1 and 2, skate 4, splatoon 2 and 3, life is strange, mirror's edge catalyst, and more!</p>
+                </article>
+                <article>
+                    <h1>kandi</h1>
+                    <p>i make kandi! i've been making kandi since around 2021. here's some of my kandi! ^^</p>
+                    <div class="kandi-container">
+                        <img src="images/kandi1.jpg">
+                        <img src="images/kandi2.jpg">
+                        <img src="images/kandi3.jpg">
+                        <img src="images/kandi4.jpg">
+                        <img src="images/kandi5.jpg">
+                        <img src="images/kandi6.jpg">
+                        <img src="images/kandi7.jpg">
+                    </div>
+                </article>
+            </main>
+            <footer>
+                <p>site made by yours truly :]</p>
+            </footer>
         </div>
-        <img class="clippy" src="clippy.png" width="150px">
-    </div>
-    <script src="https://status.cafe/current-status.js?name=leefylavish" defer></script>
-</body>
-
+    </body>
 </html>
