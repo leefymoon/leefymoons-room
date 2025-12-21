@@ -1,6 +1,5 @@
 body {
-    background: url(images/background.jpg);
-    background-position: fixed;
+    background: url(images/background.jpg) fixed;
     background-size: cover;
     display: flex;
     justify-content: center!important;
@@ -196,10 +195,11 @@ a:hover {
     width: 1000px;
     margin: auto;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 200px 35px auto 1fr;
+    grid-template-rows: 200px 35px 60px auto 1fr;
     grid-template-areas: 'header header header header'
     'marquee marquee marquee marquee'
-    'nav main main main'
+    'nav nav nav nav'
+    'main main main main'
     'footer footer footer footer';
     gap: 5px;
 }
@@ -226,10 +226,10 @@ header {
 nav {
     grid-area: nav;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(6, 60px);
-    width: 250px;
-    height: 360px;
+    grid-template-rows: 60px!important;
+    grid-template-columns: repeat(6, auto);
+    width: 1009.2px;
+    height: 60px;
 }
 
 nav button {
@@ -306,10 +306,9 @@ main {
     margin-top: -5px;
     margin-left: -5px;
     margin: 0;
-    width: 745px;
-    height: 350px;
+    width: 1000px;
+    height: fit-content;
     background: url(images/tileBG.gif);
-    overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: #8a2be2 #000;
 }
@@ -338,7 +337,7 @@ article h1{
 }
 
 .updates-container {
-    width: 645px;
+    width: 98%;
     overflow-x: scroll;
     white-space: nowrap;
     overflow-y: hidden;
@@ -425,7 +424,7 @@ li {
 }
 
 .about-right-col {
-    width: 330px;
+    width: 48%;
     margin: 0px auto;
     height: fit-content;
     display: flex;
@@ -433,7 +432,7 @@ li {
 }
 
 .quizzes {
-    width: 330px;
+    width: 100%;
     height: 250px;
     overflow-y: scroll;
     margin: 0px auto;
@@ -442,7 +441,7 @@ li {
 }
 
 .friends {
-    width: 330px;
+    width: 100%;
     height: fit-content;
     margin: 0px auto;
     border: #8a2be2 5px outset;
@@ -450,7 +449,7 @@ li {
 }
 
 .about-stamps {
-    width: 330px;
+    width: 100%;
     height: 73px;
     margin: 0px auto;
     border: #8a2be2 5px outset;
@@ -483,7 +482,7 @@ li {
 .albums-container {
     border: #8a2be2 5px outset;
     height: 160px;
-    width: 635px;
+    width: auto;
     display: flex;
     align-items: center;
     padding: 0px 10px;
@@ -503,7 +502,7 @@ li {
 .kandi-container {
     border: #8a2be2 5px outset;
     height: 160px;
-    width: 635px;
+    width: 98%px;
     display: flex;
     align-items: center;
     padding: 0px 10px;
@@ -524,8 +523,8 @@ table {
     color: #fff;
     border: #8a2be2 5px solid;
     border-collapse: collapse;
-    width: 300px!important;
-    margin-top: 15px;
+    width: 48%!important;
+    margin: 15px auto 0px;
     font-family: Amiga Forever;
     font-size: 12px;
 }
@@ -541,6 +540,11 @@ tr, th, td {
     margin: 20px auto;
     border: #8a2be2 5px outset;
     padding: 5px;
+    text-align: left;
+}
+
+.blog-container h2 {
+    font-size: 30px;
 }
 
 .blog-container summary {
@@ -635,6 +639,7 @@ tr, th, td {
 }
 
 .shrine-preview {
+    background: linear-gradient(#8a2be2, #000 40%);
     border: #8a2be2 5px outset;
     width: fit-content;
     height: fit-content;
