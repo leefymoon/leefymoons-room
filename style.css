@@ -199,7 +199,7 @@ a:hover {
     grid-template-areas: 'header header header header'
     'marquee marquee marquee marquee'
     'nav nav nav nav'
-    'main main main main'
+    'main main main aside'
     'footer footer footer footer';
     gap: 5px;
 }
@@ -209,13 +209,19 @@ header {
     width: 1000px;
     height: 200px;
     border: #8a2be2 5px outset;
+    border-radius: 20px 20px 0px 0px;
     position: relative;
+}
+
+header img {
+    border-radius: 15px 15px 0px 0px;
 }
 
 #banner-creds {
     background-color: rgba(255, 255, 0, 0.25);
     width: fit-content;
     height: 20px;
+    border-radius: 0px 15px 0px 0px;
     position: absolute;
     top: 0;
     right: 0;
@@ -233,7 +239,7 @@ nav {
 }
 
 nav button {
-    background: url(images/tileBG2-static.gif);
+    background: linear-gradient(#8a2be2 30%, #4a167a, #7326bc);
     background-size: auto;
     background-position: center;
     margin: 0!important;
@@ -249,7 +255,7 @@ nav button {
 
 nav button:hover {
     border: #8a2be2 5px inset;
-    background: url(images/tileBG2.gif);
+    background: linear-gradient(#6e23b5 30%, #310f51, #5b1e95);
 }
 
 nav button a {
@@ -306,11 +312,75 @@ main {
     margin-top: -5px;
     margin-left: -5px;
     margin: 0;
-    width: 1000px;
+    width: 750px;
     height: fit-content;
     background: url(images/tileBG.gif);
     scrollbar-width: thin;
     scrollbar-color: #8a2be2 #000;
+} 
+
+.main-content {
+    grid-area: main-content;
+}
+
+aside {
+    grid-area: aside;
+    border: #8a2be2 5px outset;
+    width: 225px;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 5px;
+}
+
+.aside-box {
+    width: 225px;
+    margin-bottom: 5px;
+}
+
+.aside-box h3 {
+    grid-area: h3;
+    background: linear-gradient(to right,#8a2be2, transparent);
+    text-align: left;
+    padding-left: 5px;
+}
+
+.aside-box p{
+    font-size: 11px;
+}
+
+.aside-box span {
+    grid-area: span;
+    padding-top: 5px;
+}
+
+.aside-box span img {
+    width: 60px;
+}
+
+.aside-box:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3 auto);
+    grid-template-rows: auto;
+    grid-template-areas: 'h3 h3 h3'
+    'span span span';
+}
+
+.aside-box li {
+    text-align: left;
+    color: #fff;
+    font-family: Amiga Forever;
+    font-size: 11px;
+}
+
+#marquee {
+    min-height: 325px;
+    height: 1512px;
+    overflow-y: scroll;
+}
+
+#marquee img{
+    width: 190px;
 }
 
 article {
@@ -400,7 +470,7 @@ article h1{
     border: #8a2be2 1px solid;
 }
 
-li {
+.new-article li {
     color: #fff;
     border-bottom: #fff 1px solid;
     list-style-type: none;
@@ -408,6 +478,10 @@ li {
     font-family: Amiga Forever;
     font-size: 10px;
     margin: auto;
+}
+
+.new-article li:last-child {
+    border-bottom: none;
 }
 
 .new-article:first-child {
@@ -535,7 +609,7 @@ tr, th, td {
 }
 
 .blog-container {
-    background: #000;
+    background: url(images/blogTileBG.gif);
     width: 95%;
     margin: 20px auto;
     border: #8a2be2 5px outset;
@@ -543,8 +617,17 @@ tr, th, td {
     text-align: left;
 }
 
+.blog-container p {
+    width: fit-content;
+}
+
 .blog-container h2 {
     font-size: 30px;
+    width: fit-content;
+}
+
+.blog-container span img {
+    width: 32px;
 }
 
 .blog-container summary {
@@ -650,6 +733,7 @@ tr, th, td {
 footer {
     grid-area: footer;
     border: #8a2be2 5px outset;
+    border-radius: 0px 0px 20px 20px;
     width: 1000px;
     background: radial-gradient(rgba(0, 0, 0, 0.5) 10%, rgb(0,0,0) 95%);
     height: 75px;
