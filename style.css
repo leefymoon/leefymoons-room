@@ -4,6 +4,11 @@ body {
     display: flex;
     justify-content: center!important;
     align-items: center!important;
+    cursor: url('cursor.png'), default!important;
+}
+
+*:hover {
+    cursor: url('cursor.png'), default!important;
 }
 
 @font-face {
@@ -190,7 +195,7 @@ a:hover {
     bottom: 0;
 }
 
-.grid-container {
+#grid-container {
     display: grid;
     width: 1000px;
     margin: auto;
@@ -327,12 +332,17 @@ main {
 
 aside {
     grid-area: aside;
+    width: 225px!important;
+}
+
+.aside-container {
     border: #8a2be2 5px outset;
     width: 225px;
     height: fit-content;
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 5px;
+    margin-bottom: 5px;
 }
 
 .aside-box {
@@ -723,10 +733,15 @@ tr, th, td {
     font-family: Amiga Forever;
 }
 
+#shrines {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .shrine-preview {
     background: linear-gradient(#8a2be2, #000 40%);
     border: #8a2be2 5px outset;
-    width: fit-content;
+    width: 280px;
     height: fit-content;
     padding: 10px;
     margin: auto;
