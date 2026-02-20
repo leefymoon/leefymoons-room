@@ -11,25 +11,31 @@
         <img src="banner1.png" id="banner" />
         <div id="banner-creds"></div>
         <script>
+          //script for random banners :yippee:
+          //array in "banner creator";"image name" format
           var img = [
-            "leefy",
-            "bespoke",
-            "zookajoe",
-            "hunter",
-            "epicness",
-            "li",
-            "ryni",
-            "lore",
-            "cozmo",
-            "jarhead",
-            "kris"
+            "leefy;banner1",
+            "bespoke;banner2",
+            "zookajoe;banner3",
+            "hunter;banner4",
+            "epicness;banner5",
+            "li;banner6",
+            "ryni;banner7",
+            "lore;banner8",
+            "cozmo;banner9",
+            "jarhead;banner10"
           ];
+
+          //randomly picks a string
           banner = Math.floor(Math.random() * img.length);
-          (document.getElementById("banner").src =
-            "images/" + img[banner] + ".png")(
-            (document.getElementById("banner-creds").textContent =
-              "made by " + img[banner])
-          );
+
+          //splits the picked string into image name and creator name
+          var bannerSplit = img[banner].split(";");
+
+          //changes the src of banner element to the split string and the text of banner creds to the other half of split string
+          //i hate making comments holy shit
+          document.getElementById("banner").src = "images/" + bannerSplit[1] + ".png";
+          document.getElementById("banner-creds").textContent = "made by " + bannerSplit[0];
         </script>
       </header>
       <div class="marquee">
@@ -604,5 +610,7 @@
         <p>site made by yours truly :]</p>
       </footer>
     </div>
-  </body>
+        <script src="randomBanner.js"></script>
+        <script src="explodeClick.js"></script>
+    </body>
 </html>

@@ -6,38 +6,17 @@
     <base target="_blank" />
   </head>
   <body>
-    <div class="grid-container">
+    <div id="grid-container">
       <header>
         <img src="banner1.png" id="banner" />
         <div id="banner-creds"></div>
-        <script>
-          var img = [
-            "leefy",
-            "bespoke",
-            "zookajoe",
-            "hunter",
-            "epicness",
-            "li",
-            "ryni",
-            "lore",
-            "cozmo",
-            "jarhead",
-            "kris"
-          ];
-          banner = Math.floor(Math.random() * img.length);
-          (document.getElementById("banner").src =
-            "images/" + img[banner] + ".png")(
-            (document.getElementById("banner-creds").textContent =
-              "made by " + img[banner])
-          );
-        </script>
       </header>
       <div class="marquee">
         <div class="marquee-content">
-          <p>oughhh i hate post-winter break // i need to grind ow2 BADLY // join crosstalk today at crosstalk.im //</p>
+          <p>javascript you are my ENEMY // i love biller joel // that fuckin bird that i hate //</p>
         </div>
         <div class="marquee-content">
-          <p>oughhh i hate post-winter break // i need to grind ow2 BADLY // join crosstalk today at crosstalk.im //</p>
+          <p>javascript you are my ENEMY // i love biller joel // that fuckin bird that i hate //</p>
         </div>
       </div>
       <nav>
@@ -49,19 +28,74 @@
         <button><a href="shrines.html" target="_self">shrines</a></button>
       </nav>
       <aside>
-        <div class="aside-box">
-          <h3>did you know?</h3>
-          <p>this site was founded back in the summer of 2023 on neocities! i was in my scene phase and i had just started learning html so it didn't look good...</p>
-        </div>
-        <div class="aside-box">
-          <h3>socials</h3>
-          <span><a href="https://crosstalk.im/profile/+leefymoon"><img src="images/wlm-icon.png" width="" style="image-rendering: pixelated;"></a></span>
-          <span><a href="https://spacehey.com/leefymoon"><img src="images/spacehey-icon.png" width="" style="image-rendering: pixelated;"></a></span>
-          <span><a href="https://pikidiary.lol/@leefylavish"><img src="images/piki-icon.png" width="" style="image-rendering: pixelated;"></a></span>
-          <span><a rel="me" href="https://social.fort1nd.com/@leefyexplodes"><img src="images/forums-icon.png" width="" style="image-rendering: pixelated;"></a></span>
-          <span><a href="https://www.tumblr.com/blog/leefymoon"><img src="images/tumblr-icon.png" width="" style="image-rendering: pixelated;"></a></span>
-          <span><a href="https://discordapp.com/users/484765590511419403"><img src="images/discord-icon.png" width="" style="image-rendering: pixelated;"></a></span>
-        </div>
+        <div class="aside-container">
+          <div class="aside-box">
+            <h3>did you know?</h3>
+            <p>
+            this site was founded back in the summer of 2023 on neocities! i was
+            in my scene phase and i had just started learning html so it didn't
+            look good...
+            </p>
+          </div>
+          <div class="aside-box">
+            <h3>socials</h3>
+            <span
+              ><a href="https://crosstalk.im/profile/+leefymoon"
+                ><img
+                src="images/wlm-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a href="https://spacehey.com/leefymoon"
+              ><img
+                src="images/spacehey-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a href="https://bsky.app/profile/leefymoon.bsky.social"
+                ><img
+                src="images/bsky-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a rel="me" href="https://social.fort1nd.com/@leefyexplodes"
+                ><img
+                src="images/forums-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a href="https://www.tumblr.com/blog/leefymoon"
+                ><img
+                src="images/tumblr-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a href="https://discordapp.com/users/484765590511419403"
+                ><img
+                src="images/discord-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a href="https://pin.it/2VPmTVtIq"
+                ><img
+                src="images/pinterest-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a href="https://steamcommunity.com/profiles/76561199156330743/"
+                ><img
+                src="images/steam-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+          </div>
         <div class="aside-box">
           <h3>to-do list</h3>
           <ul>
@@ -70,16 +104,17 @@
             <li>add my email</li>
             <li>make a form for site banner submissions</li>
             <li>add more things to the aside</li>
-            <li>make a custom cursor</li>
+            <li><s>make a custom cursor</s></li>
           </ul>
+        </div>
         </div>
       </aside>
       <main>
-        <article>
+        <article id="shrines">
             <h1>shrines</h1>
             <div class="shrine-preview">
                 <img width="250px" src="images/top-shrine-preview.png">
-                <a href="shrines/twentyonepilots.html" target="_self"><p>twenty one pilots</p></a>
+                <a href="shrines/twentyonepilots/index.html" target="_self"><p>twenty one pilots</p></a>
             </div>
         </article>
       </main>
@@ -87,5 +122,7 @@
         <p>site made by yours truly :]</p>
       </footer>
     </div>
-  </body>
+        <script src="randomBanner.js"></script>
+        <script src="explodeClick.js"></script>
+    </body>
 </html>

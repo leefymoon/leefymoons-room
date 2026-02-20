@@ -10,26 +10,6 @@
             <header>
                 <img src="banner1.png" id="banner">
                 <div id="banner-creds"></div>
-                <script>
-                    var img = [
-                        "leefy",
-            "bespoke",
-            "zookajoe",
-            "hunter",
-            "epicness",
-            "li",
-            "ryni",
-            "lore",
-            "cozmo",
-            "jarhead",
-            "kris",
-            "jarhead",
-            "kris"
-                        ]
-                        banner = Math.floor(Math.random() * img.length);
-                        (document.getElementById("banner").src = "images/" + img[banner] + ".png")
-                        (document.getElementById("banner-creds").textContent = "made by " + img[banner])
-                </script>
             </header>
             <div class="marquee">
                 <div class="marquee-content">
@@ -101,6 +81,20 @@
                 width=""
                 style="image-rendering: pixelated" /></a
             ></span>
+            <span
+              ><a href="https://pin.it/2VPmTVtIq"
+                ><img
+                src="images/pinterest-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
+            <span
+              ><a href="https://steamcommunity.com/profiles/76561199156330743/"
+                ><img
+                src="images/steam-icon.png"
+                width=""
+                style="image-rendering: pixelated" /></a
+            ></span>
           </div>
         <div class="aside-box">
           <h3>to-do list</h3>
@@ -110,7 +104,7 @@
             <li>add my email</li>
             <li>make a form for site banner submissions</li>
             <li>add more things to the aside</li>
-            <li>make a custom cursor</li>
+            <li><s>make a custom cursor</s></li>
           </ul>
         </div>
         </div>
@@ -195,5 +189,7 @@
                 <p>site made by yours truly :]</p>
             </footer>
         </div>
+        <script src="randomBanner.js"></script>
+        <script src="explodeClick.js"></script>
     </body>
 </html>
