@@ -1,163 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="site-favicon.ico" />
-    <base target="_blank" />
-    <script type="text/javascript">
-      var speed = 100; // speed colours change, 1 second = 1000
-      var glow = 6; // can be set from '0' for no glow, to 10
-      var raincol = new Array("#C698F1", "#DCC0F6", "#F3E9FC", "#ffffff"); // change the colours if you want to
-      var alink = "https://leefymoons-room.net/"; // page to link text to (set to ="" for no link)
-
-      /****************************
-       *    Rainbow Text Effect    *
-       *(c)2003-13 mf2fm web-design*
-       *  http://www.mf2fm.com/rv  *
-       * DON'T EDIT BELOW THIS BOX! *
-       ****************************/
-      var rainbow,
-        raintxt,
-        raincnt = 0;
-
-      function addLoadEvent(funky) {
-        var oldonload = window.onload;
-        if (typeof oldonload != "function") window.onload = funky;
-        else
-          window.onload = function () {
-            if (oldonload) oldonload();
-            funky();
-          };
-      }
-
-      addLoadEvent(regenbogen);
-
-      function regenbogen() {
-        if (document.getElementById) {
-          var i, rainbeau;
-          rainbow = document.getElementById("rainbow");
-          raintxt = rainbow.firstChild.nodeValue;
-          while (rainbow.childNodes.length)
-            rainbow.removeChild(rainbow.childNodes[0]);
-          for (i = 0; i < raintxt.length; i++) {
-            rainbeau = document.createElement("span");
-            rainbeau.setAttribute("id", "rain" + i);
-            rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
-            if (alink) {
-              rainbeau.style.cursor = "pointer";
-              rainbeau.onclick = function () {
-                top.location.href = alink;
-              };
+    <head>
+        <style>
+            body {
+                background: url(images/old/background.gif) fixed;
+                background-size: cover;
             }
-            rainbow.appendChild(rainbeau);
-          }
-          rainbow = setInterval("raining()", speed);
-        }
-      }
 
-      function raining() {
-        var i, c;
-        for (i = 0; i < raintxt.length; i++) {
-          c = raincol[(i + raincnt) % raincol.length];
-          document.getElementById("rain" + i).style.color = c;
-          if (glow)
-            document.getElementById("rain" + i).style.textShadow =
-              c + " 0px 0px " + glow + "px";
-        }
-        raincnt++;
-      }
-      // ]]>
-    </script>
-  </head>
-  <body>
-    <div class="welc-container">
-      <div id="sticky-note">
-        <p id="sticky-note-text">css is my worst enemy</p>
-        <script>
-          var text = [
-            "css is my worst enemy",
-            "WHAT H",
-            "what the hell is a kilometer!!!",
-            "yes i know my code isn't great idc",
-            "fuck the naysayers cuz this is what style we bring!!",
-            "i <3 my friends #myfriends",
-            "feesh",
-            "i really need to get a job good god",
-            "me: i love my site!! also me: *no update for a million years..*",
-            "now arriving at janky code central",
-            "master of juggling school and hobbies",
-            "arm32 linus",
-          ];
-          content = Math.floor(Math.random() * text.length);
-          document.getElementById("sticky-note-text").textContent =
-            text[content];
-        </script>
-      </div>
-      <h1>
-        welcome to
-        <b class="glow"><span id="rainbow">leefymoon's room!</span></b>
-      </h1>
-      <div class="welc-content">
-        <div class="welc-gadgets">
-          <div class="statuscafe-container">
-            <div id="statuscafe">
-              <div id="statuscafe-username"></div>
-              <div id="statuscafe-content"></div>
-            </div>
-            <img class="clippy" src="images/clippy.png" width="150px" />
-          </div>
-          <script
-            src="https://status.cafe/current-status.js?name=leefylavish"
-            defer
-          ></script>
-          <div class="welc-button" style="margin-top: 10px">
-            <img src="images/desktopButton.gif" />
-            <img src="images/vscodeButton.png" />
-            <img src="images/noweb3Button.gif" />
-            <a href="https://crosstalk.im/"
-              ><img src="images/CTButton.gif"
-            /></a>
-            <a href="https://311.com/"><img src="images/311button.gif" /></a>
-            <a href="http://www.rssboard.org/rss-validator/check.cgi?url=https%3A//leefymoons-room.net/feed.xml"><img src="images/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a>
-            <a href="https://lttstore.com/"
-              ><img src="images/lttButton.gif"
-            /></a>
-            <a href="https://fmhy.net/"
-              ><img src="images/piracyButton.png"
-            /></a>
-            <a href="https://www.gimp.org"
-              ><img src="images/gimpButton.png"
-            /></a>
-            <img src="images/edgeChromeButton.png" />
-            <img src="images/noAIButton.png" />
-            <img src="images/fishButton.png" onclick="feesh()" />
-            <audio id="feesh-clip" src="feesh.ogg"></audio>
-            <script>
-              var x = document.getElementById("feesh-clip");
+            * {
+                font-family: MS PGothic;
+                color: #fff!important;
+            }
 
-              function feesh() {
-                x.play();
-              }
-            </script>
-          </div>
-        </div>
-        <div class="welc-intro">
-          <h2>but wait!! before you go...</h2>
-          <p>
-            first off, glad you made it! please be aware that my site contains
-            the following: flashing images, javascript, profanity, marquees
-            (scrolling elements), and freely expressed opinions. it should also
-            be known that this site may not be up to accessibility standards and
-            is not mobile friendly! (also my code is prone to being VERY jank,
-            you have been warned...) with all of that said, i invite you into my
-            room! (things looking strange? ctrl + shift + r or ctrl + f5!)
-          </p>
-          <button><a href="home.html" target="_self">enter!</a></button>
-        </div>
-      </div>
-    </div>
-    <marquee class="kitty" direction="right" scrollamount="8"
-      ><img src="https://i.ibb.co/mr9wpy3j/ezgif-7ae33ce282e869.gif"
-    /></marquee>
-  </body>
+            p {
+                font-size: 20px;
+            }
+
+            td {
+                background-color: blueviolet;
+            }
+
+            @keyframes a {
+                to {background-position:0 -200%}
+            }
+
+            #new {
+                
+            }
+
+            #new:hover {
+                background: linear-gradient(rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%) 0 0/100% 200%;
+                animation: a 1s linear infinite;
+                font-size: x-large;
+            }
+
+            #old:hover {
+                font-size: x-large;
+            }
+        </style>
+    </head>
+    <body text="#ffffff" link="blue" vlink="black">
+        <center>
+            <h1>hey you made it!</h1>
+            <hr>
+            <p color="#fff">welcome in, welcome in. you made it to the wonderous land of leefymoon's room! now hang on, are you on a new or old browser?</p>
+            <table border="2" cellpadding="100px">
+                <tbody>
+                    <tr>
+                        <td id="new"><h2><a href="welcome.html">new</a></h2></td>
+                        <td id="old"><h2><a href="old/index.html">old</a></h2></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </body>
 </html>
